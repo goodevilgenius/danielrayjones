@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	{% seo %}
+
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  </head>
+
+  <body {% if page.id %}id="page-{{ page.id }}"{% endif %}>
+	<section class="entry-content">
+	  {{ content }}
+	</section>
+  </body>
+</html>
