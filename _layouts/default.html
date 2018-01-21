@@ -9,6 +9,11 @@
 
   <body {% if page.id %}id="page-{{ page.id }}"{% endif %}>
 	<section class="entry-content">
+	  {% if page.title %}
+	  <header class="entry-header">
+		<h1 class="entry-title">{{ page.title }}</h1>
+	  </header>
+	  {% endif %}
 	  {{ content }}
 	</section>
   </body>
