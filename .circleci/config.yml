@@ -1,0 +1,31 @@
+version: 2
+jobs:
+  build:
+    branches:
+      only: [master]
+    working_directory: /tmp/danielrayjones
+    steps:
+      - checkout
+      - run:
+          name: Configure git user
+          command: |
+            git config --global user.email "ci@medology.com"
+            git config --global user.name "Circle CI"
+      - run:
+          name: Install dependencies
+          command: bundle install
+      - run:
+          name: Creating build directory
+          command: git clone -b gh-pages `git remote get-url origin` _site
+      - run:
+          name: Build site
+          command: bundle exec jekyll build
+      - run:
+          name: No Jekyll
+          command: touch _site/.nojekyll
+      - run:
+          name: Deploy site
+          command: |
+            git --work-tree=_site --git-dir=_site/.git add -A
+            git --work-tree=_site --git-dir=_site/.git commit -m "$(date --iso-8601=seconds) Deploy new site"
+            git push
