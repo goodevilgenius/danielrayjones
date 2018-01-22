@@ -1,1 +1,1 @@
-Sitemap: http://localhost:9090/sitemap.xml
+Sitemap: https://projects.danielrayjones.com/danielrayjones/sitemap.xml
