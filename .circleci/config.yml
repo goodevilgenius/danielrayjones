@@ -11,7 +11,8 @@ jobs:
       - run:
           name: Configure git user
           command: |
-            git config --global user.email "ci@medology.com"
+            echo "$GITHUB_SSH_KEY" | base64 --decode -i > ~/.ssh/id_rsa
+            git config --global user.email "ci@danielrayjones.com"
             git config --global user.name "Circle CI"
       - run:
           name: Install dependencies
