@@ -4,6 +4,8 @@ jobs:
     branches:
       only: [master]
     working_directory: /tmp/danielrayjones
+    machine:
+      enabled: true
     steps:
       - checkout
       - run:
