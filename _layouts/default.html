@@ -8,6 +8,13 @@
   </head>
 
   <body {% if page.id %}id="page-{{ page.id }}"{% endif %}>
+	<nav class="nav noprint">
+	  <a class="nav-link" href="/">Introduction</a>
+	  <a class="nav-link" href="/web/">Web Resume</a>
+	  <a class="nav-link" href="/theater/">Acting Resume</a>
+	  <a class="nav-link" href="/contact/">Contact</a>
+	</nav>
+
 	<section class="entry-content container-fluid">
 	  {% if page.title %}
 	  <header class="entry-header">
