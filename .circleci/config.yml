@@ -31,6 +31,7 @@ jobs:
       - run:
           name: Deploy site
           command: |
-            git --work-tree=_site --git-dir=_site/.git add -A
-            git --work-tree=_site --git-dir=_site/.git commit -m "$(date --iso-8601=seconds) Deploy new site"
+            cd _site
+            git add -A
+            git commit -m "$(date --iso-8601=seconds) Deploy new site"
             git push
