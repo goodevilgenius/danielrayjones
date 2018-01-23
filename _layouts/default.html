@@ -8,20 +8,25 @@
   </head>
 
   <body {% if page.id %}id="page-{{ page.id }}"{% endif %}>
-	<nav class="nav noprint">
-	  <a class="nav-link" href="{{ site.baseurl }}/">Introduction</a>
-	  <a class="nav-link" href="{{ site.baseurl }}/web/">Web Resume</a>
-	  <a class="nav-link" href="{{ site.baseurl }}/theater/">Acting Resume</a>
-	  <a class="nav-link" href="{{ site.baseurl }}/contact/">Contact</a>
-	</nav>
+	<section class="container-fluid primary-container">
+	  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.name }}</a>
+		<div class="collapse navbar-collapse justify-content-end">
+		  <a class="nav-link" href="{{ site.baseurl }}/">Introduction</a>
+		  <a class="nav-link" href="{{ site.baseurl }}/web/">Web Resume</a>
+		  <a class="nav-link" href="{{ site.baseurl }}/theater/">Acting Resume</a>
+		  <a class="nav-link" href="{{ site.baseurl }}/contact/">Contact</a>
+		</div>
+	  </nav>
 
-	<section class="entry-content container-fluid">
-	  {% if page.title %}
-	  <header class="entry-header">
-		<h1 class="entry-title">{{ page.title }}</h1>
-	  </header>
-	  {% endif %}
-	  {{ content }}
+	  <section class="entry-content container-fluid">
+		{% if page.title %}
+		<header class="entry-header">
+		  <h1 class="entry-title">{{ page.title }}</h1>
+		</header>
+		{% endif %}
+		{{ content }}
+	  </section>
 	</section>
   </body>
 </html>
