@@ -8273,7 +8273,7 @@ dl > dt + dt, dl > dd + dt {
   display: none;
 }
 
-#page-web section, #page-theater section {
+#page-web section.entry-content, #page-theater section.entry-content {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   padding-top: 1em;
 }
