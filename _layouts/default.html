@@ -19,14 +19,23 @@
 		</div>
 	  </nav>
 
-	  <section class="entry-content container-fluid">
-		{% if page.title %}
-		<header class="entry-header">
-		  <h1 class="entry-title">{{ page.title }}</h1>
-		</header>
-		{% endif %}
-		{{ content }}
-	  </section>
+	  <div class="row">
+		<div class="order-2 order-md-1 col-12 col-md-3 col-xl-2 bd-sidebard">
+		  Here's a sidebar
+		</div>
+
+		<main class="order-1 order-md-2 col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
+		  <section class="entry-content container-fluid">
+			{% if page.title %}
+			<header class="entry-header">
+			  <h1 class="entry-title">{{ page.title }}</h1>
+			</header>
+			{% endif %}
+			{{ content }}
+		  </section>
+		</main>
+	  </div>
+
 	</section>
   </body>
 </html>
