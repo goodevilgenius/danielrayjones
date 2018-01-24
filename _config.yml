@@ -55,6 +55,10 @@ url: https://projects.danielrayjones.com
 # then add in the baseurl here, like this: "/repository-name"
 baseurl: "/danielrayjones"
 
+collections:
+  links:
+    output: false
+
 #
 # !! You don't need to change any of the configuration flags below !!
 #

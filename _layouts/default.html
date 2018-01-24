@@ -21,7 +21,16 @@
 
 	  <div class="row">
 		<div class="order-2 order-md-1 col-12 col-md-3 col-xl-2 bd-sidebard">
-		  Here's a sidebar
+		  <aside>
+			<header>
+			  <h2>My Links</h2>
+			</header>
+
+			{% for link in site.links %}
+			{% if link.display == false %}{% continue %}{% endif %}
+			<p><a href="{{ link.url }}">{{ link.title }} </a></p>
+			{% endfor %}
+		  </aside>
 		</div>
 
 		<main class="order-1 order-md-2 col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
