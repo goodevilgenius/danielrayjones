@@ -1,5 +1,5 @@
 ---
 title: Dan's Musings (blog)
-url: https://goodevilgenius.org
+link: https://goodevilgenius.org
 display: false
 ---

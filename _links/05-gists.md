@@ -1,4 +1,4 @@
 ---
 title: My GitHub Gists
-url: https://gist.github.com/goodevilgenius
+link: https://gist.github.com/goodevilgenius
 ---

@@ -20,16 +20,17 @@
 	  </nav>
 
 	  <div class="row">
-		<div class="order-2 order-md-1 col-12 col-md-3 col-xl-2 bd-sidebard">
+		<div class="order-2 order-md-1 col-12 col-md-3 col-xl-2 bd-sidebard bg-dark">
 		  <aside>
 			<header>
 			  <h2>My Links</h2>
 			</header>
 
-			{% for link in site.links %}
-			{% if link.display == false %}{% continue %}{% endif %}
-			<p><a href="{{ link.url }}">{{ link.title }} </a></p>
-			{% endfor %}
+			<ul class="list-group">
+			  {% for link in site.links %}{% if link.display == false %}{% continue %}{% endif %}
+			  <li class="list-group-item list-group-item-dark"><a href="{{ link.link }}">{{ link.title }} </a></li>
+			  {% endfor %}
+			</ul>
 		  </aside>
 		</div>
 
