@@ -20,7 +20,7 @@
 	  </nav>
 
 	  <div class="row">
-		<div class="order-2 order-md-1 col-12 col-md-3 col-xl-2 bd-sidebard bg-dark">
+		<div class="order-2 order-md-1 col-12 col-md-3 col-xl-2 bd-sideboard bg-dark">
 		  <aside>
 			<header>
 			  <h2>My Links</h2>
@@ -32,6 +32,18 @@
 			  {% endfor %}
 			</ul>
 		  </aside>
+
+		  {% if site.author.twitter %}
+		  <aside>
+			<header>
+			  <h2>My Tweets</h2>
+			  <a class="twitter-timeline"
+				 data-height="400"
+				 href="https://twitter.com/{{ site.author.twitter }}?ref_src=twsrc%5Etfw">
+				Tweets by {{ site.author.twitter }}
+			  </a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+		  </aside>
+		  {% endif %}
 		</div>
 
 		<main class="order-1 order-md-2 col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
