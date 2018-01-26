@@ -8238,6 +8238,16 @@ a.text-dark:hover, a.text-dark:focus {
   padding: 0;
 }
 
+.bd-sideboard.bg-dark aside {
+  padding: 0.3rem;
+}
+.bd-sideboard.bg-dark header {
+  color: #f8f9fa;
+}
+.bd-sideboard.bg-dark header h2 {
+  font-size: 1.7rem;
+}
+
 dl > dt + dd, dl > dd + dd {
   padding-left: 1em;
   margin-bottom: 0;
