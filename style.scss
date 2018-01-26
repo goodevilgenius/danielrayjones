@@ -6,6 +6,19 @@
   padding: 0;
 }
 
+.bd-sideboard.bg-dark {
+  aside {
+    padding: $table-cell-padding-sm;
+  }
+  header {
+    color: $light;
+
+    h2 {
+      font-size: 1.7rem;
+    }
+  }
+}
+
 dl {
 	& > dt + dd, & > dd + dd {
 		padding-left: 1em;
