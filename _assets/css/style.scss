@@ -1,21 +1,26 @@
----
----
 @import 'bootstrap';
+@import 'font-awesome-sprockets';
+@import 'font-awesome';
 
 .primary-container {
   padding: 0;
 }
 
-.bd-sideboard.bg-dark {
+.bd-sideboard {
   aside {
     padding: $table-cell-padding-sm;
   }
-  header {
-    color: $light;
 
+  header {
     h2 {
       font-size: 1.7rem;
     }
+  }
+}
+
+.bg-dark {
+  p, header {
+    color: $light;
   }
 }
 
