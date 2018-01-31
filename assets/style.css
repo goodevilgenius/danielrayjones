@@ -9728,6 +9728,9 @@ a.text-dark:hover, a.text-dark:focus {
   overflow: visible;
   clip: auto; }
 
+.rounded-large {
+  border-radius: 1rem; }
+
 .primary-container {
   padding: 0; }
 
