@@ -21,7 +21,7 @@ author:
   name: Dan Jones
   from: Texas, USA
   dribbble:
-  email: 
+  email: wizzard351@yahoo.com
   facebook: danjones
   flickr: goodevilgenius
   github: goodevilgenius
@@ -74,6 +74,7 @@ plugins:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-seo-tag
   - jekyll-assets
+  - jekyll-gravatar
   - bootstrap
   - font-awesome-sass
 
