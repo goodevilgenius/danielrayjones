@@ -10,7 +10,13 @@
 	<section class="container-fluid primary-container">
 	  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.name }}</a>
-		<div class="collapse navbar-collapse justify-content-end">
+		<button class="navbar-toggler" type="button" data-toggle="collapse"
+				data-target="#nav-links" aria-label="Toggle navigation"
+				aria-controls="nav-links" aria-expanded="false">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse justify-content-end" id="nav-links">
 		  <a class="nav-link" href="{{ site.baseurl }}/">Introduction</a>
 		  <a class="nav-link" href="{{ site.baseurl }}/web/">Web Resume</a>
 		  <a class="nav-link" href="{{ site.baseurl }}/theater/">Acting Resume</a>
@@ -21,7 +27,7 @@
 	  <div class="row">
 		<div class="order-2 order-md-1 col-12 col-md-3 col-xl-2 bd-sideboard bg-dark">
 		  <aside>
-			<p>{{ site.description }}</p>
+			<p class="text-muted small">{{ site.description }}</p>
 		  </aside>
 
 		  <aside>
