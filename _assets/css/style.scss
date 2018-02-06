@@ -55,6 +55,10 @@ dl {
 	.printonly { display: none; }
 }
 
+p, dl, ul, ol {
+  &:last-child { margin-bottom: 0; }
+}
+
 .hide { display: none; }
 
 %resume {
