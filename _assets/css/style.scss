@@ -145,22 +145,8 @@ p, dl, ul, ol {
 
 #page-theater {
 	@extend %resume;
-	
-	#contact {
-		display: table;
-		width: 100%;
-		
-		div {
-			display: table-cell;
-			vertical-align: top;
-			
-			&:first-child {
-				text-align: center;
-			}
 
-			&:last-child {
-				text-align: right;
-			}
-		}
-	}
+    figure.headshot {
+      max-height: 12rem;
+    }
 }
