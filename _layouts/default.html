@@ -7,7 +7,7 @@
     <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
   </head>
 
-  <body {% if page.id %}id="page-{{ page.id }}"{% endif %}>
+  <body {% if page.id %}id="page-{{ page.id }}"{% endif %} class="bg-dark">
 	<section class="container-fluid primary-container">
 	  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.name }}</a>
@@ -59,7 +59,7 @@
 		  {% endif %}
 		</div>
 
-		<main class="order-1 order-md-2 col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
+		<main class="bg-white order-1 order-md-2 col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
 		  <section class="entry-content container-fluid">
 			{% if page.title %}
 			<header class="entry-header">
