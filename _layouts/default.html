@@ -9,7 +9,7 @@
 
   <body {% if page.id %}id="page-{{ page.id }}"{% endif %} class="bg-dark">
 	<section class="container-fluid primary-container">
-	  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	  <nav class="navbar navbar-expand-lg navbar-dark bg-dark site-header">
 		<a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.name }}</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse"
 				data-target="#nav-links" aria-label="Toggle navigation"
@@ -26,7 +26,7 @@
 	  </nav>
 
 	  <div class="row">
-		<div class="order-2 order-md-1 col-12 col-md-3 col-xl-2 bd-sideboard bg-dark">
+		<div class="order-2 order-md-1 col-12 col-md-3 col-xl-2 bd-sideboard bg-dark site-sidebar">
 		  <aside>
 			<figure class="figure">
 			  <img src="{{ site.author.email | to_gravatar }}?s=200" class="figure-img img-fluid rounded-large" alt="" />
@@ -74,7 +74,7 @@
 
 	</section>
 
-	<footer class="footer bg-dark">
+	<footer class="footer bg-dark site-footer">
 	  <div class="container-fluid">
 		<p>{{ site.author.name }}
 		  {% if site.author.facebook %}<a href="https://www.facebook.com/{{ site.author.facebook }}"><i class="fa fa-facebook"></i></a>{% endif %}

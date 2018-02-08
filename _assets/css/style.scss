@@ -53,7 +53,7 @@ dl {
 
 @media print {
 	.noprint { display: none; }
-	.site-header { display: none; }
+	.site-header, .site-sidebar, .site-footer { display: none; }
 	.hentry { margin-bottom: 0; }
 	p, dl, ul, ol { margin-bottom: 1em; }
 }
