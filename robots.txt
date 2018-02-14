@@ -1,1 +1,1 @@
-Sitemap: https://projects.danielrayjones.com/danielrayjones/sitemap.xml
+Sitemap: https://danielrayjones.com/sitemap.xml
