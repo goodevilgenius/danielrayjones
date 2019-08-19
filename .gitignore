@@ -6,7 +6,6 @@ _site
 .asset-cache
 .jekyll-cache
 .sass-cache
-Gemfile.lock
 node_modules
 package.json
 
