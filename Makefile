@@ -1,11 +1,19 @@
+.PHONY: all build-image serve clean
+
 export PATH := $(HOME)/bin:$(PATH):/usr/local/bin
-IP ?= 127.0.0.1
 PORT ?= 4000
+IMAGE=ruby-with-bundler:2.6.3-2.0.2
 
 all: serve
 
-stage:
-	bundle exec jekyll build -c '_config.yml,_config.local.yml'
+build-image:
+	docker build -t $(IMAGE) .
 
-serve:
-	bundle exec jekyll serve -H "$(IP)" -P "$(PORT)" -c '_config.yml,_config.local.yml'
+_site/index.html: build-image
+	docker run -u $(shell id -u) --rm -v $(shell pwd):/app -w /app $(IMAGE) bundle exec jekyll build -c '_config.yml,_config.local.yml'
+
+serve: _site/index.html
+	docker run --rm -it -v $(shell pwd):/app -w /app -p $(PORT):$(PORT) $(IMAGE) bundle exec jekyll serve -H 0.0.0.0 -P "$(PORT)" -c '_config.yml,_config.local.yml'
+
+clean:
+	rm -rf _site
