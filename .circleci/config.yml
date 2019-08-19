@@ -4,8 +4,8 @@ jobs:
     branches:
       only: [master]
     working_directory: /tmp/danielrayjones
-    machine:
-      enabled: true
+    docker:
+      - image: ruby:2.6.3
     steps:
       - checkout
       - run:
@@ -18,7 +18,9 @@ jobs:
             git config --global user.name "Circle CI"
       - run:
           name: Install dependencies
-          command: bundle install
+          command: |
+            gem install bundler:2.0.2
+            bundle check || bundle install
       - run:
           name: Creating build directory
           command: git clone -b gh-pages `git remote get-url origin` _site
