@@ -1,18 +1,19 @@
-.PHONY: all build-image serve clean
+.PHONY: all serve clean
 
 export PATH := $(HOME)/bin:$(PATH):/usr/local/bin
 PORT ?= 4000
-IMAGE=ruby-with-bundler:2.6.3-2.0.2
+IMAGE=danjones000/danielrayjones/ruby-with-bundler:1.0.0
 
 all: serve
 
-build-image:
+.image: Gemfile Gemfile.lock
 	docker build -t $(IMAGE) .
+	docker image inspect $(IMAGE) | jq -r '.[0].Id' | tee .image
 
 _config.local.yml:
 	touch $@
 
-_site/index.html: build-image _config.local.yml
+_site/index.html: .image _config.local.yml
 	docker run -u $(shell id -u) --rm -v $(shell pwd):/app -w /app $(IMAGE) bundle exec jekyll build -c '_config.yml,_config.local.yml'
 
 serve: _site/index.html
