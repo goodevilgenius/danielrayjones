@@ -9,7 +9,10 @@ all: serve
 build-image:
 	docker build -t $(IMAGE) .
 
-_site/index.html: build-image
+_config.local.yml:
+	touch $@
+
+_site/index.html: build-image _config.local.yml
 	docker run -u $(shell id -u) --rm -v $(shell pwd):/app -w /app $(IMAGE) bundle exec jekyll build -c '_config.yml,_config.local.yml'
 
 serve: _site/index.html
