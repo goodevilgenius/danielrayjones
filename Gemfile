@@ -6,4 +6,4 @@ gem "jekyll-assets", "~> 3.0.12", group: :jekyll_plugins
 gem 'sprockets-es6'
 
 gem "bootstrap", ">= 4.3.1"
-gem "font-awesome-sass", "~> 5.11"
+gem "font-awesome-sass", "~> 5.12"
