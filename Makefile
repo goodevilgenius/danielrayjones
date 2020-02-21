@@ -6,7 +6,10 @@ IMAGE=danjones000/danielrayjones/ruby-with-bundler:1.0.0
 
 all: serve
 
-.image: Gemfile Gemfile.lock
+Gemfile.lock:
+	docker run -u $(shell id -u) --rm -v $(shell pwd):/app -w /app ruby:2.6.3 sh -c 'gem install bundler:2.0.2 && bundle install'
+
+.image: Gemfile.lock
 	docker build -t $(IMAGE) .
 	docker image inspect $(IMAGE) | jq -r '.[0].Id' | tee .image
 
