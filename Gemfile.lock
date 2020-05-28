@@ -45,7 +45,7 @@ GEM
       forwardable-extended (~> 2.5)
     fastimage (2.1.7)
     ffi (1.12.2)
-    font-awesome-sass (5.12.0)
+    font-awesome-sass (5.13.0)
       sassc (>= 1.11)
     forwardable-extended (2.6.0)
     http_parser.rb (0.6.0)
@@ -162,7 +162,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootstrap (>= 4.3.1)
-  font-awesome-sass (~> 5.12)
+  font-awesome-sass (~> 5.13)
   jekyll-assets (~> 3.0.12)
   jekyll-gravatar (~> 0.1.0)
   jekyll-seo-tag
