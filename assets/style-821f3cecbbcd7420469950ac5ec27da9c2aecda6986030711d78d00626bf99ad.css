@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /*!
- * Bootstrap v4.4.1 (https://getbootstrap.com/)
- * Copyright 2011-2019 The Bootstrap Authors
- * Copyright 2011-2019 Twitter, Inc.
+ * Bootstrap v4.5.0 (https://getbootstrap.com/)
+ * Copyright 2011-2020 The Bootstrap Authors
+ * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 :root {
@@ -155,7 +155,8 @@ samp {
 pre {
   margin-top: 0;
   margin-bottom: 1rem;
-  overflow: auto; }
+  overflow: auto;
+  /* @alternate */ -ms-overflow-style: scrollbar; }
 
 figure {
   margin: 0 0 1rem; }
@@ -210,6 +211,9 @@ button,
 select {
   text-transform: none; }
 
+[role="button"] {
+  cursor: pointer; }
+
 select {
   word-wrap: normal; }
 
@@ -236,12 +240,6 @@ input[type="radio"],
 input[type="checkbox"] {
   box-sizing: border-box;
   padding: 0; }
-
-input[type="date"],
-input[type="time"],
-input[type="datetime-local"],
-input[type="month"] {
-  /* @alternate */ -webkit-appearance: listbox; }
 
 textarea {
   overflow: auto;
@@ -507,6 +505,7 @@ pre {
 .col {
   flex-basis: 0;
   flex-grow: 1;
+  min-width: 0;
   max-width: 100%; }
 
 .row-cols-1 > * {
@@ -668,6 +667,7 @@ pre {
   .col-sm {
     flex-basis: 0;
     flex-grow: 1;
+    min-width: 0;
     max-width: 100%; }
 
   .row-cols-sm-1 > * {
@@ -831,6 +831,7 @@ pre {
   .col-md {
     flex-basis: 0;
     flex-grow: 1;
+    min-width: 0;
     max-width: 100%; }
 
   .row-cols-md-1 > * {
@@ -994,6 +995,7 @@ pre {
   .col-lg {
     flex-basis: 0;
     flex-grow: 1;
+    min-width: 0;
     max-width: 100%; }
 
   .row-cols-lg-1 > * {
@@ -1157,6 +1159,7 @@ pre {
   .col-xl {
     flex-basis: 0;
     flex-grow: 1;
+    min-width: 0;
     max-width: 100%; }
 
   .row-cols-xl-1 > * {
@@ -1596,6 +1599,12 @@ pre {
     background-color: #e9ecef;
     opacity: 1; }
 
+input[type="date"].form-control,
+input[type="time"].form-control,
+input[type="datetime-local"].form-control,
+input[type="month"].form-control {
+  appearance: none; }
+
 select.form-control:focus::-ms-value {
   color: #495057;
   background-color: #fff; }
@@ -1903,7 +1912,6 @@ textarea.form-control {
   color: #212529;
   text-align: center;
   vertical-align: middle;
-  cursor: pointer;
   user-select: none;
   background-color: transparent;
   border: 1px solid transparent;
@@ -1923,6 +1931,8 @@ textarea.form-control {
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
   .btn.disabled, .btn:disabled {
     opacity: 0.65; }
+  .btn:not(:disabled):not(.disabled) {
+    cursor: pointer; }
 
 a.btn.disabled,
 fieldset:disabled a.btn {
@@ -2280,8 +2290,7 @@ fieldset:disabled a.btn {
     color: #0056b3;
     text-decoration: underline; }
   .btn-link:focus, .btn-link.focus {
-    text-decoration: underline;
-    box-shadow: none; }
+    text-decoration: underline; }
   .btn-link:disabled, .btn-link.disabled {
     color: #6c757d;
     pointer-events: none; }
@@ -2615,7 +2624,8 @@ input[type="button"].btn-block {
   .input-group > .custom-select,
   .input-group > .custom-file {
     position: relative;
-    flex: 1 1 0%;
+    flex: 1 1 auto;
+    width: 1%;
     min-width: 0;
     margin-bottom: 0; }
     .input-group > .form-control + .form-control,
@@ -3379,7 +3389,7 @@ input[type="button"].btn-block {
   color: rgba(0, 0, 0, 0.5);
   border-color: rgba(0, 0, 0, 0.1); }
 .navbar-light .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
 .navbar-light .navbar-text {
   color: rgba(0, 0, 0, 0.5); }
   .navbar-light .navbar-text a {
@@ -3406,7 +3416,7 @@ input[type="button"].btn-block {
   color: rgba(255, 255, 255, 0.5);
   border-color: rgba(255, 255, 255, 0.1); }
 .navbar-dark .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
 .navbar-dark .navbar-text {
   color: rgba(255, 255, 255, 0.5); }
   .navbar-dark .navbar-text a {
@@ -3427,12 +3437,17 @@ input[type="button"].btn-block {
   .card > hr {
     margin-right: 0;
     margin-left: 0; }
-  .card > .list-group:first-child .list-group-item:first-child {
-    border-top-left-radius: 0.25rem;
-    border-top-right-radius: 0.25rem; }
-  .card > .list-group:last-child .list-group-item:last-child {
-    border-bottom-right-radius: 0.25rem;
-    border-bottom-left-radius: 0.25rem; }
+  .card > .list-group {
+    border-top: inherit;
+    border-bottom: inherit; }
+    .card > .list-group:first-child {
+      border-top-width: 0;
+      border-top-left-radius: calc(0.25rem - 1px);
+      border-top-right-radius: calc(0.25rem - 1px); }
+    .card > .list-group:last-child {
+      border-bottom-width: 0;
+      border-bottom-right-radius: calc(0.25rem - 1px);
+      border-bottom-left-radius: calc(0.25rem - 1px); }
 
 .card-body {
   flex: 1 1 auto;
@@ -3584,19 +3599,21 @@ input[type="button"].btn-block {
   background-color: #e9ecef;
   border-radius: 0.25rem; }
 
-.breadcrumb-item + .breadcrumb-item {
-  padding-left: 0.5rem; }
-  .breadcrumb-item + .breadcrumb-item::before {
-    display: inline-block;
-    padding-right: 0.5rem;
-    color: #6c757d;
-    content: "/"; }
-.breadcrumb-item + .breadcrumb-item:hover::before {
-  text-decoration: underline; }
-.breadcrumb-item + .breadcrumb-item:hover::before {
-  text-decoration: none; }
-.breadcrumb-item.active {
-  color: #6c757d; }
+.breadcrumb-item {
+  display: flex; }
+  .breadcrumb-item + .breadcrumb-item {
+    padding-left: 0.5rem; }
+    .breadcrumb-item + .breadcrumb-item::before {
+      display: inline-block;
+      padding-right: 0.5rem;
+      color: #6c757d;
+      content: "/"; }
+  .breadcrumb-item + .breadcrumb-item:hover::before {
+    text-decoration: underline; }
+  .breadcrumb-item + .breadcrumb-item:hover::before {
+    text-decoration: none; }
+  .breadcrumb-item.active {
+    color: #6c757d; }
 
 .pagination {
   display: flex;
@@ -3890,6 +3907,7 @@ input[type="button"].btn-block {
   display: flex;
   height: 1rem;
   overflow: hidden;
+  line-height: 0;
   font-size: 0.75rem;
   background-color: #e9ecef;
   border-radius: 0.25rem; }
@@ -3929,7 +3947,8 @@ input[type="button"].btn-block {
   display: flex;
   flex-direction: column;
   padding-left: 0;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  border-radius: 0.25rem; }
 
 .list-group-item-action {
   width: 100%;
@@ -3951,11 +3970,11 @@ input[type="button"].btn-block {
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.125); }
   .list-group-item:first-child {
-    border-top-left-radius: 0.25rem;
-    border-top-right-radius: 0.25rem; }
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit; }
   .list-group-item:last-child {
-    border-bottom-right-radius: 0.25rem;
-    border-bottom-left-radius: 0.25rem; }
+    border-bottom-right-radius: inherit;
+    border-bottom-left-radius: inherit; }
   .list-group-item.disabled, .list-group-item:disabled {
     color: #6c757d;
     pointer-events: none;
@@ -3973,97 +3992,95 @@ input[type="button"].btn-block {
 
 .list-group-horizontal {
   flex-direction: row; }
-  .list-group-horizontal .list-group-item:first-child {
+  .list-group-horizontal > .list-group-item:first-child {
     border-bottom-left-radius: 0.25rem;
     border-top-right-radius: 0; }
-  .list-group-horizontal .list-group-item:last-child {
+  .list-group-horizontal > .list-group-item:last-child {
     border-top-right-radius: 0.25rem;
     border-bottom-left-radius: 0; }
-  .list-group-horizontal .list-group-item.active {
+  .list-group-horizontal > .list-group-item.active {
     margin-top: 0; }
-  .list-group-horizontal .list-group-item + .list-group-item {
+  .list-group-horizontal > .list-group-item + .list-group-item {
     border-top-width: 1px;
     border-left-width: 0; }
-    .list-group-horizontal .list-group-item + .list-group-item.active {
+    .list-group-horizontal > .list-group-item + .list-group-item.active {
       margin-left: -1px;
       border-left-width: 1px; }
 
 @media (min-width: 576px) {
   .list-group-horizontal-sm {
     flex-direction: row; }
-    .list-group-horizontal-sm .list-group-item:first-child {
+    .list-group-horizontal-sm > .list-group-item:first-child {
       border-bottom-left-radius: 0.25rem;
       border-top-right-radius: 0; }
-    .list-group-horizontal-sm .list-group-item:last-child {
+    .list-group-horizontal-sm > .list-group-item:last-child {
       border-top-right-radius: 0.25rem;
       border-bottom-left-radius: 0; }
-    .list-group-horizontal-sm .list-group-item.active {
+    .list-group-horizontal-sm > .list-group-item.active {
       margin-top: 0; }
-    .list-group-horizontal-sm .list-group-item + .list-group-item {
+    .list-group-horizontal-sm > .list-group-item + .list-group-item {
       border-top-width: 1px;
       border-left-width: 0; }
-      .list-group-horizontal-sm .list-group-item + .list-group-item.active {
+      .list-group-horizontal-sm > .list-group-item + .list-group-item.active {
         margin-left: -1px;
         border-left-width: 1px; } }
 @media (min-width: 768px) {
   .list-group-horizontal-md {
     flex-direction: row; }
-    .list-group-horizontal-md .list-group-item:first-child {
+    .list-group-horizontal-md > .list-group-item:first-child {
       border-bottom-left-radius: 0.25rem;
       border-top-right-radius: 0; }
-    .list-group-horizontal-md .list-group-item:last-child {
+    .list-group-horizontal-md > .list-group-item:last-child {
       border-top-right-radius: 0.25rem;
       border-bottom-left-radius: 0; }
-    .list-group-horizontal-md .list-group-item.active {
+    .list-group-horizontal-md > .list-group-item.active {
       margin-top: 0; }
-    .list-group-horizontal-md .list-group-item + .list-group-item {
+    .list-group-horizontal-md > .list-group-item + .list-group-item {
       border-top-width: 1px;
       border-left-width: 0; }
-      .list-group-horizontal-md .list-group-item + .list-group-item.active {
+      .list-group-horizontal-md > .list-group-item + .list-group-item.active {
         margin-left: -1px;
         border-left-width: 1px; } }
 @media (min-width: 992px) {
   .list-group-horizontal-lg {
     flex-direction: row; }
-    .list-group-horizontal-lg .list-group-item:first-child {
+    .list-group-horizontal-lg > .list-group-item:first-child {
       border-bottom-left-radius: 0.25rem;
       border-top-right-radius: 0; }
-    .list-group-horizontal-lg .list-group-item:last-child {
+    .list-group-horizontal-lg > .list-group-item:last-child {
       border-top-right-radius: 0.25rem;
       border-bottom-left-radius: 0; }
-    .list-group-horizontal-lg .list-group-item.active {
+    .list-group-horizontal-lg > .list-group-item.active {
       margin-top: 0; }
-    .list-group-horizontal-lg .list-group-item + .list-group-item {
+    .list-group-horizontal-lg > .list-group-item + .list-group-item {
       border-top-width: 1px;
       border-left-width: 0; }
-      .list-group-horizontal-lg .list-group-item + .list-group-item.active {
+      .list-group-horizontal-lg > .list-group-item + .list-group-item.active {
         margin-left: -1px;
         border-left-width: 1px; } }
 @media (min-width: 1200px) {
   .list-group-horizontal-xl {
     flex-direction: row; }
-    .list-group-horizontal-xl .list-group-item:first-child {
+    .list-group-horizontal-xl > .list-group-item:first-child {
       border-bottom-left-radius: 0.25rem;
       border-top-right-radius: 0; }
-    .list-group-horizontal-xl .list-group-item:last-child {
+    .list-group-horizontal-xl > .list-group-item:last-child {
       border-top-right-radius: 0.25rem;
       border-bottom-left-radius: 0; }
-    .list-group-horizontal-xl .list-group-item.active {
+    .list-group-horizontal-xl > .list-group-item.active {
       margin-top: 0; }
-    .list-group-horizontal-xl .list-group-item + .list-group-item {
+    .list-group-horizontal-xl > .list-group-item + .list-group-item {
       border-top-width: 1px;
       border-left-width: 0; }
-      .list-group-horizontal-xl .list-group-item + .list-group-item.active {
+      .list-group-horizontal-xl > .list-group-item + .list-group-item.active {
         margin-left: -1px;
         border-left-width: 1px; } }
-.list-group-flush .list-group-item {
-  border-right-width: 0;
-  border-left-width: 0;
+.list-group-flush {
   border-radius: 0; }
-  .list-group-flush .list-group-item:first-child {
-    border-top-width: 0; }
-.list-group-flush:last-child .list-group-item:last-child {
-  border-bottom-width: 0; }
+  .list-group-flush > .list-group-item {
+    border-width: 0 0 1px; }
+    .list-group-flush > .list-group-item:last-child {
+      border-bottom-width: 0; }
 
 .list-group-item-primary {
   color: #004085;
@@ -4170,8 +4187,7 @@ input[type="button"].btn-block {
 button.close {
   padding: 0;
   background-color: transparent;
-  border: 0;
-  appearance: none; }
+  border: 0; }
 
 a.close.disabled {
   pointer-events: none; }
@@ -4261,6 +4277,7 @@ a.close.disabled {
   .modal-dialog-centered::before {
     display: block;
     height: calc(100vh - 1rem);
+    height: min-content;
     content: ""; }
   .modal-dialog-centered.modal-dialog-scrollable {
     flex-direction: column;
@@ -4349,7 +4366,8 @@ a.close.disabled {
   .modal-dialog-centered {
     min-height: calc(100% - 3.5rem); }
     .modal-dialog-centered::before {
-      height: calc(100vh - 3.5rem); }
+      height: calc(100vh - 3.5rem);
+      height: min-content; }
 
   .modal-sm {
     max-width: 300px; } }
@@ -4735,7 +4753,8 @@ a.close.disabled {
   0% {
     transform: scale(0); }
   50% {
-    opacity: 1; } }
+    opacity: 1;
+    transform: none; } }
 .spinner-grow {
   display: inline-block;
   width: 2rem;
@@ -5685,6 +5704,15 @@ button.bg-dark:focus {
 
   .float-xl-none {
     float: none !important; } }
+.user-select-all {
+  user-select: all !important; }
+
+.user-select-auto {
+  user-select: auto !important; }
+
+.user-select-none {
+  user-select: none !important; }
+
 .overflow-auto {
   overflow: auto !important; }
 
@@ -5804,17 +5832,6 @@ button.bg-dark:focus {
 
 .vh-100 {
   height: 100vh !important; }
-
-.stretched-link::after {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-  pointer-events: auto;
-  content: "";
-  background-color: rgba(0, 0, 0, 0); }
 
 .m-0 {
   margin: 0 !important; }
@@ -7526,6 +7543,17 @@ button.bg-dark:focus {
   .ml-xl-auto,
   .mx-xl-auto {
     margin-left: auto !important; } }
+.stretched-link::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  pointer-events: auto;
+  content: "";
+  background-color: rgba(0, 0, 0, 0); }
+
 .text-monospace {
   font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important; }
 
@@ -7689,8 +7717,7 @@ a.text-dark:hover, a.text-dark:focus {
   text-decoration: none !important; }
 
 .text-break {
-  word-break: break-word !important;
-  overflow-wrap: break-word !important; }
+  word-wrap: break-word !important; }
 
 .text-reset {
   color: inherit !important; }
@@ -7775,7 +7802,7 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 /*!
- * Font Awesome Free 5.12.0 by @fontawesome - https://fontawesome.com
+ * Font Awesome Free 5.13.0 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
 /* FONT PATH
@@ -7784,23 +7811,23 @@ a.text-dark:hover, a.text-dark:focus {
   font-family: 'Font Awesome 5 Free';
   font-style: normal;
   font-weight: 900;
-  font-display: auto;
-  src: url(/assets/font-awesome/fa-solid-900-f29eef66eb3ad0e3574d8edb4b9e72a04692a0b2b92d99eb7c4b977611ddd4fe.eot);
-  src: url(/assets/font-awesome/fa-solid-900-f29eef66eb3ad0e3574d8edb4b9e72a04692a0b2b92d99eb7c4b977611ddd4fe.eot#iefix) format("embedded-opentype"), url(/assets/font-awesome/fa-solid-900-787d76ad6deab67ccf8bac1b584260205e114f508fc5542b612e3f75d49a34e4.woff2) format("woff2"), url(/assets/font-awesome/fa-solid-900-3b60c77e0c81c1c9cdc9adb96ade6dbac7ef2b9402a316185855de7122e517db.woff) format("woff"), url(/assets/font-awesome/fa-solid-900-0389b061db08d406704c9bb8819e09c3558ac956287b3e9da8e6645a79d528ea.ttf) format("truetype"), url(/assets/font-awesome/fa-solid-900-eaf0f3d0cadad17eed1045cf68c30db7abffb4c8ef4ee9cb5f4026fdefc99a59.svg#fontawesome) format("svg"); }
+  font-display: block;
+  src: url(/assets/font-awesome/fa-solid-900-32501727bb23fc77615b1ec76b5f298ec22198c0f3d6a3e7d6fe4ac3cf315db9.eot);
+  src: url(/assets/font-awesome/fa-solid-900-32501727bb23fc77615b1ec76b5f298ec22198c0f3d6a3e7d6fe4ac3cf315db9.eot#iefix) format("embedded-opentype"), url(/assets/font-awesome/fa-solid-900-7f4d3fd0a705dbf8403298aad91d5de6972e6b5d536068eba8b24954a5a0a8c7.woff2) format("woff2"), url(/assets/font-awesome/fa-solid-900-352f8ead280419dd953d2bc7843386bb9430e8152c2dbd2c2d2494f6b9567ee7.woff) format("woff"), url(/assets/font-awesome/fa-solid-900-231d68cefbc6846fb78cafca8467401a4f371e226418662e8900e3d52adc00ab.ttf) format("truetype"), url(/assets/font-awesome/fa-solid-900-e768539808757f7eec20f09c9ee9b36b0e6c5636e90c9ee697995cbbc6ee0555.svg#fontawesome) format("svg"); }
 @font-face {
   font-family: 'Font Awesome 5 Free';
   font-style: normal;
   font-weight: 400;
-  font-display: auto;
-  src: url(/assets/font-awesome/fa-regular-400-c1465a6b8743622f759b08a6d5336e57eb6eabdba1b6393fba6d30d45382f3d2.eot);
-  src: url(/assets/font-awesome/fa-regular-400-c1465a6b8743622f759b08a6d5336e57eb6eabdba1b6393fba6d30d45382f3d2.eot#iefix) format("embedded-opentype"), url(/assets/font-awesome/fa-regular-400-86e496b536b26ba60cdb68df9dd9143b19a63b65e30e373b0321833aab1295d6.woff2) format("woff2"), url(/assets/font-awesome/fa-regular-400-864c8f702a5e63198bb76ef0240b599cc065d4904c2afc5da6c8a29bbf0d6c64.woff) format("woff"), url(/assets/font-awesome/fa-regular-400-6a335d1ce152f2b5b02bf82cc445b02d1abccd7f408a87113424b5f8fcbbfade.ttf) format("truetype"), url(/assets/font-awesome/fa-regular-400-7ab8a39f4c48b743bd6acbbf5ea4c7547efcb62ad966e9bef3e41996afc44fd4.svg#fontawesome) format("svg"); }
+  font-display: block;
+  src: url(/assets/font-awesome/fa-regular-400-01f4416f5db59e2dd6b6fbd9dc32336d99db18f7eb623a49f584d04afd279473.eot);
+  src: url(/assets/font-awesome/fa-regular-400-01f4416f5db59e2dd6b6fbd9dc32336d99db18f7eb623a49f584d04afd279473.eot#iefix) format("embedded-opentype"), url(/assets/font-awesome/fa-regular-400-6a8c8e9e1e7f692c21af1956de163f3d026778e6449fe93a09a671847ca1ae65.woff2) format("woff2"), url(/assets/font-awesome/fa-regular-400-8e2d96198711b63752e5f2f5987b8ffc536df6156a065bdbe28cb7231cad793d.woff) format("woff"), url(/assets/font-awesome/fa-regular-400-f32b94a29060dfec0c797a1dfe111357eb1d682f1aca4ac4b95cf0f4c3e2bfa9.ttf) format("truetype"), url(/assets/font-awesome/fa-regular-400-865fd23de13b1920280e182359579e09eff7a09eb24676eceec7552838559f55.svg#fontawesome) format("svg"); }
 @font-face {
   font-family: 'Font Awesome 5 Brands';
   font-style: normal;
   font-weight: normal;
-  font-display: auto;
-  src: url(/assets/font-awesome/fa-brands-400-e9fdf947c39f06f1b5e63c58eea2f2f74850421b4e32047dacb9c7b75dd42a16.eot);
-  src: url(/assets/font-awesome/fa-brands-400-e9fdf947c39f06f1b5e63c58eea2f2f74850421b4e32047dacb9c7b75dd42a16.eot#iefix) format("embedded-opentype"), url(/assets/font-awesome/fa-brands-400-8e4560c16c7970efa47680450b2cf239d4a482c056d308acea12bb9022906c8b.woff2) format("woff2"), url(/assets/font-awesome/fa-brands-400-1af816db9a686faa76bfbda779df959e6213de714a94b87aa7374a151f6f4900.woff) format("woff"), url(/assets/font-awesome/fa-brands-400-6b347ff01e588a2a6909ccd7f7f5866b27484391547e9df451ab9b4c27920c71.ttf) format("truetype"), url(/assets/font-awesome/fa-brands-400-36b51fbe6b87587541b9173cd79c16c6b359ad22a172b922204f9aa87411acd9.svg#fontawesome) format("svg"); }
+  font-display: block;
+  src: url(/assets/font-awesome/fa-brands-400-811e1577184066108ceca86d5a624a9012303df5206c5cb0b27d5e3fedcba5a3.eot);
+  src: url(/assets/font-awesome/fa-brands-400-811e1577184066108ceca86d5a624a9012303df5206c5cb0b27d5e3fedcba5a3.eot#iefix) format("embedded-opentype"), url(/assets/font-awesome/fa-brands-400-5d9190292acdd48ba0fc35080f7e7448f3cdf0d79199a4d23f0f49b5341fdf29.woff2) format("woff2"), url(/assets/font-awesome/fa-brands-400-e836c5d5dfc13e18170c5bddefb4fdac7c65ac0ad43a4b431acdc4a98865a260.woff) format("woff"), url(/assets/font-awesome/fa-brands-400-a0c145382acfe59767d1487d6505f349665b685c2885cd91b621d141a292b0f8.ttf) format("truetype"), url(/assets/font-awesome/fa-brands-400-02340ba1789d09bcc507563c89c4a847ba537bb8132082777a50519cf74bcb5b.svg#fontawesome) format("svg"); }
 .fa,
 .fas {
   font-family: 'Font Awesome 5 Free';
@@ -8420,6 +8447,9 @@ readers do not read off random characters that represent icons */
 .fa-box-open:before {
   content: ""; }
 
+.fa-box-tissue:before {
+  content: "拏"; }
+
 .fa-boxes:before {
   content: ""; }
 
@@ -8993,6 +9023,9 @@ readers do not read off random characters that represent icons */
 .fa-d-and-d-beyond:before {
   content: ""; }
 
+.fa-dailymotion:before {
+  content: "勒"; }
+
 .fa-dashcube:before {
   content: ""; }
 
@@ -9079,6 +9112,9 @@ readers do not read off random characters that represent icons */
 
 .fa-discourse:before {
   content: ""; }
+
+.fa-disease:before {
+  content: ""; }
 
 .fa-divide:before {
   content: ""; }
@@ -9310,6 +9346,9 @@ readers do not read off random characters that represent icons */
 
 .fa-fast-forward:before {
   content: ""; }
+
+.fa-faucet:before {
+  content: "串"; }
 
 .fa-fax:before {
   content: ""; }
@@ -9797,8 +9836,14 @@ readers do not read off random characters that represent icons */
 .fa-hand-holding-heart:before {
   content: ""; }
 
+.fa-hand-holding-medical:before {
+  content: "樂"; }
+
 .fa-hand-holding-usd:before {
   content: ""; }
+
+.fa-hand-holding-water:before {
+  content: ""; }
 
 .fa-hand-lizard:before {
   content: ""; }
@@ -9833,6 +9878,9 @@ readers do not read off random characters that represent icons */
 .fa-hand-scissors:before {
   content: ""; }
 
+.fa-hand-sparkles:before {
+  content: "諾"; }
+
 .fa-hand-spock:before {
   content: ""; }
 
@@ -9842,8 +9890,17 @@ readers do not read off random characters that represent icons */
 .fa-hands-helping:before {
   content: ""; }
 
+.fa-hands-wash:before {
+  content: "丹"; }
+
 .fa-handshake:before {
   content: ""; }
+
+.fa-handshake-alt-slash:before {
+  content: "寧"; }
+
+.fa-handshake-slash:before {
+  content: "怒"; }
 
 .fa-hanukiah:before {
   content: ""; }
@@ -9865,6 +9922,18 @@ readers do not read off random characters that represent icons */
 
 .fa-hdd:before {
   content: ""; }
+
+.fa-head-side-cough:before {
+  content: "率"; }
+
+.fa-head-side-cough-slash:before {
+  content: "異"; }
+
+.fa-head-side-mask:before {
+  content: "北"; }
+
+.fa-head-side-virus:before {
+  content: "磻"; }
 
 .fa-heading:before {
   content: ""; }
@@ -9938,6 +10007,9 @@ readers do not read off random characters that represent icons */
 .fa-hospital-symbol:before {
   content: ""; }
 
+.fa-hospital-user:before {
+  content: ""; }
+
 .fa-hot-tub:before {
   content: ""; }
 
@@ -9964,6 +10036,9 @@ readers do not read off random characters that represent icons */
 
 .fa-house-damage:before {
   content: ""; }
+
+.fa-house-user:before {
+  content: "便"; }
 
 .fa-houzz:before {
   content: ""; }
@@ -10033,6 +10108,9 @@ readers do not read off random characters that represent icons */
 
 .fa-instagram:before {
   content: ""; }
+
+.fa-instagram-square:before {
+  content: "凌"; }
 
 .fa-intercom:before {
   content: ""; }
@@ -10147,6 +10225,9 @@ readers do not read off random characters that represent icons */
 
 .fa-laptop-code:before {
   content: ""; }
+
+.fa-laptop-house:before {
+  content: "復"; }
 
 .fa-laptop-medical:before {
   content: ""; }
@@ -10264,6 +10345,12 @@ readers do not read off random characters that represent icons */
 
 .fa-luggage-cart:before {
   content: ""; }
+
+.fa-lungs:before {
+  content: ""; }
+
+.fa-lungs-virus:before {
+  content: "不"; }
 
 .fa-lyft:before {
   content: ""; }
@@ -10432,6 +10519,9 @@ readers do not read off random characters that represent icons */
 
 .fa-mixcloud:before {
   content: ""; }
+
+.fa-mixer:before {
+  content: "稜"; }
 
 .fa-mizuni:before {
   content: ""; }
@@ -10670,6 +10760,9 @@ readers do not read off random characters that represent icons */
 .fa-penny-arcade:before {
   content: ""; }
 
+.fa-people-arrows:before {
+  content: "泌"; }
+
 .fa-people-carry:before {
   content: ""; }
 
@@ -10766,6 +10859,9 @@ readers do not read off random characters that represent icons */
 .fa-plane-departure:before {
   content: ""; }
 
+.fa-plane-slash:before {
+  content: "數"; }
+
 .fa-play:before {
   content: ""; }
 
@@ -10840,6 +10936,12 @@ readers do not read off random characters that represent icons */
 
 .fa-project-diagram:before {
   content: ""; }
+
+.fa-pump-medical:before {
+  content: "索"; }
+
+.fa-pump-soap:before {
+  content: "參"; }
 
 .fa-pushed:before {
   content: ""; }
@@ -11126,6 +11228,9 @@ readers do not read off random characters that represent icons */
 .fa-shield-alt:before {
   content: ""; }
 
+.fa-shield-virus:before {
+  content: "塞"; }
+
 .fa-ship:before {
   content: ""; }
 
@@ -11137,6 +11242,9 @@ readers do not read off random characters that represent icons */
 
 .fa-shoe-prints:before {
   content: ""; }
+
+.fa-shopify:before {
+  content: "綾"; }
 
 .fa-shopping-bag:before {
   content: ""; }
@@ -11272,6 +11380,9 @@ readers do not read off random characters that represent icons */
 
 .fa-snowplow:before {
   content: ""; }
+
+.fa-soap:before {
+  content: "葉"; }
 
 .fa-socks:before {
   content: ""; }
@@ -11438,11 +11549,20 @@ readers do not read off random characters that represent icons */
 .fa-stopwatch:before {
   content: ""; }
 
+.fa-stopwatch-20:before {
+  content: "說"; }
+
 .fa-store:before {
   content: ""; }
 
 .fa-store-alt:before {
   content: ""; }
+
+.fa-store-alt-slash:before {
+  content: "殺"; }
+
+.fa-store-slash:before {
+  content: "辰"; }
 
 .fa-strava:before {
   content: ""; }
@@ -11680,6 +11800,9 @@ readers do not read off random characters that represent icons */
 
 .fa-toilet-paper:before {
   content: ""; }
+
+.fa-toilet-paper-slash:before {
+  content: "沈"; }
 
 .fa-toolbox:before {
   content: ""; }
@@ -11992,6 +12115,15 @@ readers do not read off random characters that represent icons */
 
 .fa-vine:before {
   content: ""; }
+
+.fa-virus:before {
+  content: "若"; }
+
+.fa-virus-slash:before {
+  content: "掠"; }
+
+.fa-viruses:before {
+  content: "略"; }
 
 .fa-vk:before {
   content: ""; }
