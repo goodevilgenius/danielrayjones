@@ -7,4 +7,4 @@ gem 'sprockets-es6'
 gem 'sprockets', "~> 3.7"
 
 gem "bootstrap", ">= 4.3.1"
-gem "font-awesome-sass", "~> 5.12"
+gem "font-awesome-sass", "~> 5.13"
