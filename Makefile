@@ -16,7 +16,7 @@ Gemfile.lock:
 _config.local.yml:
 	touch $@
 
-_site/index.html: .image _config.local.yml
+_site/index.html: .image _config.local.yml index.html
 	podman run --rm -v $(shell pwd):/app:rw -w /app $(IMAGE) bundle exec jekyll build -c '_config.yml,_config.local.yml'
 
 serve: _site/index.html

@@ -5,6 +5,9 @@
         .#{$abbrev}-#{$bpname}-#{$size} {
           #{$prop}: $length;
         }
+        .m#{$abbrev}-#{$bpname}-#{$size} {
+            max-#{$prop}: $length;
+        }
       }
     }
   }
