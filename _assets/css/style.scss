@@ -1,3 +1,5 @@
+$navbar-padding-x: 1rem;
+
 @import 'bootstrap';
 @import 'font-awesome-sprockets';
 @import 'font-awesome';
@@ -17,7 +19,7 @@
 
 .bd-sideboard {
   aside {
-    padding: $table-cell-padding-sm;
+    padding: $table-cell-padding-x-sm;
   }
 
   header {
