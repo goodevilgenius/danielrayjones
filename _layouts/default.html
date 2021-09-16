@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
 	  <meta name="viewport" content="width=device-width, initial-scale=1" />
 	  {% seo %}
@@ -8,7 +8,7 @@
   </head>
 
   <body {% if page.id %}id="page-{{ page.id }}"{% endif %} class="bg-dark">
-	<section class="container-fluid primary-container">
+	<div class="container-fluid primary-container">
 	  <nav class="navbar navbar-expand-lg navbar-dark bg-dark site-header">
 		<a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.name }}</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -48,18 +48,19 @@
 
 		  {% if site.author.twitter %}
 		  <aside>
-			<header>
-			  <h2>My Tweets</h2>
+			  <header>
+			    <h2>My Tweets</h2>
+        </header>
 			  <a class="twitter-timeline"
 				 data-height="400"
 				 href="https://twitter.com/{{ site.author.twitter }}?ref_src=twsrc%5Etfw">
 				Tweets by {{ site.author.twitter }}
-			  </a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			  </a><script async src="https://platform.twitter.com/widgets.js"></script>
 		  </aside>
 		  {% endif %}
 		</div>
 
-		<main class="bg-white rounded-large order-1 order-md-2 col-12 col-md-9 col-xl-10 py-md-3 ps-md-5 bd-content" role="main">
+		<main class="bg-white rounded-large order-1 order-md-2 col-12 col-md-9 col-xl-10 py-md-3 ps-md-5 bd-content">
 		  <section class="entry-content container-fluid">
 			{% if page.title %}
 			<header class="entry-header">
@@ -72,7 +73,7 @@
 
 	  </div>
 
-	</section>
+	</div>
 
 	<footer class="footer bg-dark site-footer">
 	  <div class="container-fluid">
