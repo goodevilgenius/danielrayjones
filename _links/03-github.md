@@ -1,4 +1,4 @@
 ---
-title: My GitHub
+title: GitHub
 link: https://github.com/goodevilgenius
 ---
