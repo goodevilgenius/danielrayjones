@@ -7,6 +7,9 @@ jobs:
     docker:
       - image: ruby:2.6.3
     steps:
+      - add_ssh_keys:
+          fingerprints:
+            - "23:c0:43:4c:ae:5b:92:a6:5b:79:92:6b:ca:62:59:8d"
       - checkout
       - run:
           name: Configure git user
