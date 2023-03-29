@@ -5,7 +5,7 @@ jobs:
       only: [master]
     working_directory: /tmp/danielrayjones
     docker:
-      - image: ruby:2.6.3
+      - image: ruby:2.7
     steps:
       - add_ssh_keys:
           fingerprints:
