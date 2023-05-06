@@ -11,3 +11,4 @@ package.json
 
 _config.local.yml
 .image
+*.~undo-tree~
