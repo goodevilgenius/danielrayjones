@@ -1,0 +1,21 @@
+@import "../../themes/hello-friend-ng/assets/scss/_variables";
+
+.aside {
+    max-width: 50%;
+    @media #{$media-size-phone} {
+        max-width: 100%;
+    }
+}
+
+figure {
+    &.right-floated, &.left-floated {
+        @media #{$media-size-phone} {
+            float: none;
+            text-align: left;
+
+            img {
+                margin: 0 auto;
+            }
+        }
+    }
+}

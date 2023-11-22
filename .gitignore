@@ -12,3 +12,4 @@ package.json
 _config.local.yml
 .image
 *.~undo-tree~
+.hugo_build.lock

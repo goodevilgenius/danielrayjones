@@ -1,0 +1,21 @@
+baseURL = 'https://danielrayjones.com/'
+languageCode = 'en-us'
+title = "Dan Jones"
+theme = "hello-friend-ng"
+
+[params]
+homeSubtitle = "Web developer, actor, jack of some trades"
+
+[params.logo]
+logoText = "greetings"
+
+[markup]
+defaultMarkdownHandler = 'goldmark'
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "/about"
