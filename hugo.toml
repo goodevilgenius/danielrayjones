@@ -1,13 +1,14 @@
-baseURL = 'https://danielrayjones.com/'
-languageCode = 'en-us'
+baseURL = "https://danielrayjones.com/"
+languageCode = "en-us"
 title = "Dan Jones"
 theme = "hello-friend-ng"
 
 [params]
 homeSubtitle = "Web developer, actor, jack of some trades"
+EnableThemeToggle = true
 
 [params.logo]
-logoText = "greetings"
+logoText = "RUN"
 
 [markup]
 defaultMarkdownHandler = 'goldmark'
@@ -19,3 +20,8 @@ unsafe = true
 identifier = "about"
 name = "About"
 url = "/about"
+
+[[menu.main]]
+identifier = "contact"
+name = "Contact"
+url = "/contact"
