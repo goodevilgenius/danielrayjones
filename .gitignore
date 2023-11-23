@@ -1,15 +1,5 @@
-_site
 .DS_Store
-.jekyll
-.jekyll-metadata
-.bundle
-.asset-cache
-.jekyll-cache
-.sass-cache
-node_modules
-package.json
-
-_config.local.yml
 .image
 *.~undo-tree~
 .hugo_build.lock
+public/

@@ -5,7 +5,7 @@ jobs:
       only: [master]
     working_directory: /tmp/danielrayjones
     docker:
-      - image: ruby:2.7
+      - image: hugomods/hugo:0.120.4
     steps:
       - add_ssh_keys:
           fingerprints:
@@ -17,23 +17,18 @@ jobs:
             git config --global user.email "ci@danielrayjones.com"
             git config --global user.name "Circle CI"
       - run:
-          name: Install dependencies
-          command: |
-            gem install bundler:2.0.2
-            bundle check || bundle install
-      - run:
           name: Creating build directory
-          command: git clone -b gh-pages `git remote get-url origin` _site
+          command: git clone -b gh-pages `git remote get-url origin` public
       - run:
           name: Build site
-          command: bundle exec jekyll build
+          command: hugo --cleanDestinationDir
       - run:
           name: No Jekyll
-          command: touch _site/.nojekyll
+          command: touch public/.nojekyll
       - run:
           name: Deploy site
           command: |
-            cd _site
+            cd public
             git add -A
             git commit -m "$(date --iso-8601=seconds) Deploy new site"
             git push
