@@ -10,6 +10,10 @@ EnableThemeToggle = true
 gitUrl = "https://codeberg.org/danjones000/danielrayjones/commit/"
 keywords = "resume, biography"
 
+[params.favicon]
+mask = "#5bbad5"
+msapplication = "#2d89ef"
+
 [params.logo]
 logoText = "RUN"
 
