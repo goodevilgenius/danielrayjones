@@ -26,6 +26,12 @@ ul.skills {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
+#theater-contact {
+    display: grid;
+    grid-gap: .25rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
 @media print {
 	  .noprint { display: none; }
     .container > header { display: none; }
@@ -33,6 +39,11 @@ ul.skills {
         display: none;
         & + hr { display: none; }
     }
+}
+
+figure.headshot {
+    max-height: 12rem;
+    margin: 0 auto;
 }
 
 ul.history {
