@@ -19,3 +19,30 @@ figure {
         }
     }
 }
+
+ul.skills {
+    display: grid;
+    grid-gap: .25rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+@media print {
+	  .noprint { display: none; }
+    .container > header { display: none; }
+    #toc {
+        display: none;
+        & + hr { display: none; }
+    }
+}
+
+ul.history {
+    & > li:last-child {
+        @media print {
+            display: none;
+        }
+    }
+}
+
+@media screen {
+	  .printonly { display: none; }
+}
