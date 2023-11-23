@@ -35,6 +35,8 @@ ul.skills {
 @media print {
 	  .noprint { display: none; }
     .container > header { display: none; }
+    .post-info { display: none; }
+    footer { display: none; }
     #toc {
         display: none;
         & + hr { display: none; }

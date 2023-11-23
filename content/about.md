@@ -1,6 +1,7 @@
----
-title: Introduction
----
++++
+title = "Introduction"
+description = "Welcome to my website. My name is Dan Jones. I am a web developer and an actor, and I'd like to tell you a bit about myself."
++++
 
 Welcome to my website. My name is Dan Jones. I am a web developer and an actor, and I'd like to tell you a bit about myself.
 

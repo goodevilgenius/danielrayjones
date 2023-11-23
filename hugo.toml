@@ -7,9 +7,38 @@ enableGitInfo = true
 [params]
 homeSubtitle = "Web developer, actor, jack of some trades"
 EnableThemeToggle = true
+gitUrl = "https://codeberg.org/danjones000/danielrayjones/commit/"
+keywords = "resume, biography"
 
 [params.logo]
 logoText = "RUN"
+
+[params.portrait]
+path = "https://www.gravatar.com/avatar/073daa566095477f8ecc5cf4d0f59448"
+
+[[params.social]]
+name = "gitea"
+url = "https://codeberg.org/danjones000/"
+
+[[params.social]]
+name = "gitlab"
+url = "https://gitlab.com/danjones000/"
+
+[[params.social]]
+name = "github"
+url = "https://github.com/goodevilgenius/"
+
+[[params.social]]
+name = "linkedin"
+url = "https://www.linkedin.com/in/danjones000/"
+
+[[params.social]]
+name = "matrix"
+url = "https://matrix.to/#/@danjones000:matrix.org"
+
+[[params.social]]
+name = "mastodon"
+url = "https://microwords.goodevilgenius.org/"
 
 [markup]
 defaultMarkdownHandler = 'goldmark'

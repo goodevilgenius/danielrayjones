@@ -2,6 +2,7 @@
 title: Acting Resume
 post_title: Dan Jones
 toc: true
+description: Dan Jones, actor
 ---
 
 <section id="theater-contact">
