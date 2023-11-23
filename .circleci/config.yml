@@ -17,6 +17,11 @@ jobs:
             git config --global user.email "ci@danielrayjones.com"
             git config --global user.name "Circle CI"
       - run:
+          name: Install dependencies
+          command: |
+            git submodule init
+            git submodule update
+      - run:
           name: Creating build directory
           command: git clone -b gh-pages `git remote get-url origin` public
       - run:
