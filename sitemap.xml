@@ -1,15 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-<loc>https://danielrayjones.com/contact/</loc>
-</url>
-<url>
-<loc>https://danielrayjones.com/</loc>
-</url>
-<url>
-<loc>https://danielrayjones.com/theater/</loc>
-</url>
-<url>
-<loc>https://danielrayjones.com/web/</loc>
-</url>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://danielrayjones.com/theater/</loc>
+    <lastmod>2023-11-23T09:21:55-06:00</lastmod>
+  </url><url>
+    <loc>https://danielrayjones.com/categories/</loc>
+  </url><url>
+    <loc>https://danielrayjones.com/contact/</loc>
+    <lastmod>2023-11-22T12:09:00-06:00</lastmod>
+  </url><url>
+    <loc>https://danielrayjones.com/</loc>
+  </url><url>
+    <loc>https://danielrayjones.com/about/</loc>
+    <lastmod>2023-11-23T09:21:55-06:00</lastmod>
+  </url><url>
+    <loc>https://danielrayjones.com/tags/</loc>
+  </url><url>
+    <loc>https://danielrayjones.com/web/</loc>
+    <lastmod>2023-11-22T21:20:51-06:00</lastmod>
+  </url>
 </urlset>
