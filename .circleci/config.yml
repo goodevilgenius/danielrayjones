@@ -20,6 +20,7 @@ jobs:
           name: Install dependencies
           command: |
             apk add openssh
+            ssh-keyscan -H codeberg.org > ~/.ssh/known_hosts
             git submodule init
             git submodule update
       - run:
