@@ -15,11 +15,7 @@ Fort Bend, TX 77069
 
 <section id="summary">
 
-## Summary
-
-Web developer with broad experience in both large (educational and commercial) and small(commercial) websites. Designed custom web applications from the ground up, and modified existing open-source applications to meet specific needs. Effective communicator, with experience researching and writing content for educational websites.
-
-Skills include:
+## Skills
 
 - HTML
 - CSS
@@ -36,15 +32,71 @@ Skills include:
 - Yii
 - Wordpress
 - Git
-- Grunt
 - node.js
 - MongoDB
-- Apache
 - Linux
 - Docker
 - AWS
 - Google App Engine
 {.skills}
+
+</section>
+
+<section id="projects">
+
+## Open Source Projects
+
+<section class="projects">
+
+<section class="project">
+
+### [gin error middleware](https://pkg.go.dev/codeberg.org/danjones000/gin-error-handler)
+
+A middleware for go gin framework and wrapper functions to make handling errors easier and more idiomatic.
+
+</section>
+
+<section class="project">
+
+### [Responsable Errors](https://pkg.go.dev/codeberg.org/danjones000/responsable-errors)
+
+A small go library that provides errors that can be more useful in the context of a web app. The heart of gin error middleware.
+
+</section>
+
+<section class="project">
+
+### [http go status](https://codeberg.org/danjones000/http-go-status)
+
+Super simple web server that just returns the HTTP status you ask for. Useful for testing.
+
+</section>
+
+<section class="project">
+
+### [droplogger](https://gitlab.com/danjones000/droplogger)
+
+Python logging application especially suited for life-logging with IFTTT and Dropbox.
+
+</section>
+
+<section class="project">
+
+### [Object Spy](https://packagist.org/packages/danjones000/object-spy)
+
+PHP debugging library that makes it easy to inspect private properties and methods without using reflection.
+
+</section>
+
+<section class="project">
+
+### [strip-beats](https://codeberg.org/danjones000/strip-beats)
+
+go cli app for transforming a folder of music videos and music files, with semi-automatic tagging, and user-friendly TUI. *This is a work in progress. Not yet fully functional.*
+
+</section>
+
+</section>
 
 </section>
 
@@ -100,8 +152,10 @@ I have been developing websites for over twenty years. I'm primarily self-taught
   <span class="work-period"><time datetime="2015-11">November 2015</time> - <time datetime="2016-07">July 2016</time></span>
   
   Develop Magento-based eCommerce site <span class="tech">PHP, MySQL, Magento, XML, Javascript, jQuery</span>
+
   + Extend functionality of current site
   + Modify existing site plugins to better fit workflow of sales team.
+  {.noprint}
 - **Hubbard Radio** &ndash; [**WTOP**](https://wtop.com/)/[**Federal News Radio**](https://federalnewsradio.com/)   
   *Back-end web developer*   
   <span class="work-period"><time datetime="2010-07">July 2010</time> - <time datetime="2015-11">November 2015</time></span>
