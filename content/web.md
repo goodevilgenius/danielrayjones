@@ -54,7 +54,7 @@ Fort Bend, TX 77069
 
 A middleware for go gin framework and wrapper functions to make handling errors easier and more idiomatic.
 
-</section>
+</section><!-- /middleware -->
 
 <section class="project">
 
@@ -62,15 +62,7 @@ A middleware for go gin framework and wrapper functions to make handling errors 
 
 A small go library that provides errors that can be more useful in the context of a web app. The heart of gin error middleware.
 
-</section>
-
-<section class="project">
-
-### [http go status](https://codeberg.org/danjones000/http-go-status)
-
-Super simple web server that just returns the HTTP status you ask for. Useful for testing.
-
-</section>
+</section><!-- /responsable -->
 
 <section class="project">
 
@@ -78,15 +70,11 @@ Super simple web server that just returns the HTTP status you ask for. Useful fo
 
 Python logging application especially suited for life-logging with IFTTT and Dropbox.
 
-</section>
+#### [my-log](https://codeberg.org/danjones000/my-log/)
 
-<section class="project">
+A work-in-progress complete rewrite of droplogger in go.
 
-### [Object Spy](https://packagist.org/packages/danjones000/object-spy)
-
-PHP debugging library that makes it easy to inspect private properties and methods without using reflection.
-
-</section>
+</section><!-- /log -->
 
 <section class="project">
 
@@ -94,17 +82,31 @@ PHP debugging library that makes it easy to inspect private properties and metho
 
 go cli app for transforming a folder of music videos and music files, with semi-automatic tagging, and user-friendly TUI. *This is a work in progress. Not yet fully functional.*
 
-</section>
+</section><!-- /beats -->
 
-</section>
+<section class="project">
+
+### [Object Spy](https://packagist.org/packages/danjones000/object-spy)
+
+PHP debugging library that makes it easy to inspect private properties and methods without using reflection.
+
+</section><!-- /spy -->
+
+<section class="project">
+
+### [http go status](https://codeberg.org/danjones000/http-go-status)
+
+Super simple web server that just returns the HTTP status you ask for. Useful for testing.
+
+</section><!-- /status -->
+
+</section><!-- /.projects -->
 
 </section>
 
 <section id="workhistory">
 
 ## Work History
-
-I have been developing websites for over twenty years. I'm primarily self-taught.
 
 - [**GRIN**](https://grin.co)   
   *Principal Software Engineer/Back-end Architect*   
@@ -113,7 +115,7 @@ I have been developing websites for over twenty years. I'm primarily self-taught
   Principal full-stack developer for SaaS company in creator marketing. Built out unit testing in Laravel project. Coached junior developers. Helped set standards for back-end architecture.
   Built microservices in go.
   
-  Laravel, PHP, go, PHPUnit, MySql, mongodb, Vue
+  Laravel, PHP, go, microservices, PHPUnit, MySql, mongodb, Vue
   {.tech}
 - [**BubbleUp**](https://www.bubbleup.net/)   
   *Senior Web Developer*   
@@ -197,7 +199,7 @@ I have been developing websites for over twenty years. I'm primarily self-taught
 
 </section>
 
-<section id="codesamples">
+<section id="codesamples" class="noprint">
 
 ## Code Samples
 

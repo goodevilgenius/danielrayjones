@@ -57,6 +57,9 @@ ul.skills {
         h3 > a {
             text-decoration: none;
         }
+        h4 > a {
+            text-decoration: none;
+        }
         @media print {
             display: inline-block;
             page-break-inside: avoid;
@@ -112,6 +115,9 @@ section > h2 {
     #toc {
         display: none;
         & + hr { display: none; }
+    }
+    section > h2 {
+        line-height: 0.75;
     }
 }
 
