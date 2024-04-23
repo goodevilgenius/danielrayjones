@@ -2,118 +2,12 @@
 title = "Web Résumé"
 post_title = "Dan Jones"
 toc = true
+layout = "web-resume"
 Description = "Experienced web developer"
 +++
-
-<section id="contact">
-
-Fort Bend, TX 77069   
-+1 (704) 326-1626 &bull; [dan&#x40;danielrayjones&#x2e;com](mailto:dan&#x40;danielrayjones&#x2e;com)
-<span class="printonly"><br/>https://danielrayjones.com/</span>
-
-</section><!-- /#contact -->
-
-<section id="summary">
-
-## Skills
-
-- HTML
-- CSS
-- SCSS
-- JavaScript
-- vue.js
-- jQuery
-- AJAX
-- React
-- PHP
-- go
-- MySQL
-- Laravel
-- Yii
-- Wordpress
-- Git
-- node.js
-- MongoDB
-- Linux
-- Docker
-- AWS
-- Google App Engine
-{.skills}
-
-</section><!-- /#summary -->
-
-<section id="projects">
-
-## Open Source Projects
-
-<section class="projects">
-
-<section class="project middleware">
-
-### gin error middleware
-
-[🔗](https://pkg.go.dev/codeberg.org/danjones000/gin-error-handler)
-A middleware for go gin framework and wrapper functions to make handling errors easier and more idiomatic.
-
-</section><!-- /.project.middleware -->
-
-<section class="project responsable">
-
-### Responsable Errors
-
-[🔗](https://pkg.go.dev/codeberg.org/danjones000/responsable-errors)
-A small go library that provides errors that can be more useful in the context of a web app. The heart of gin error middleware.
-
-</section><!-- /.project.responsable -->
-
-<section class="project log">
-
-### droplogger
-
-[🔗](https://gitlab.com/danjones000/droplogger)
-Python logging application especially suited for life-logging with IFTTT and Dropbox.
-
-#### my-log
-
-[🔗](https://codeberg.org/danjones000/my-log/)
-A work-in-progress complete rewrite of droplogger in go.
-
-</section><!-- /.project.log -->
-
-<section class="project strip-beats">
-
-### strip-beats
-
-[🔗](https://codeberg.org/danjones000/strip-beats)
-go cli app for transforming a folder of music videos and music files, with semi-automatic tagging, and user-friendly TUI. *This is a work in progress. Not yet fully functional.*
-
-</section><!-- /.project.strip-beats -->
-
-<section class="project object-spy">
-
-### Object Spy
-
-[🔗](https://packagist.org/packages/danjones000/object-spy)
-PHP debugging library that makes it easy to inspect private properties and methods without using reflection.
-
-</section><!-- /.project.object-spy -->
-
-<section class="project go-status">
-
-### http go status
-
-[🔗](https://codeberg.org/danjones000/http-go-status)
-Super simple web server that just returns the HTTP status you ask for. Useful for testing.
-
-</section><!-- /.project.go-status -->
-
-</section><!-- /.projects -->
-
-</section><!-- /#projects -->
-
 <section id="workhistory">
 
-## Work History
+## Work Experience
 
 - [**GRIN**](https://grin.co)   
   *Principal Software Engineer/Back-end Architect*   
@@ -205,14 +99,3 @@ Super simple web server that just returns the HTTP status you ask for. Useful fo
 {.history}
 
 </section><!-- /#workhistory -->
-
-<section id="codesamples" class="noprint">
-
-## Code Samples
-
-- [Codeberg](https://codeberg.org/danjones000)
-- [GitLab](https://gitlab.com/danjones000)
-- [GitHub](https://github.com/goodevilgenius)
-- [GitHub Gists](https://gist.github.com/goodevilgenius)
-
-</section><!-- /#codesamples -->

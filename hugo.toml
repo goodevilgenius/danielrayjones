@@ -47,6 +47,11 @@ url = "https://microwords.goodevilgenius.org/"
 [markup]
 defaultMarkdownHandler = 'goldmark'
 
+[markup.tableOfContents]
+ordered = false
+startLevel = 2
+endLevel = 4
+
 [markup.goldmark.parser.attribute]
 block = true
 title = true
