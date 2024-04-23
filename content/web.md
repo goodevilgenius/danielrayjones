@@ -11,7 +11,7 @@ Fort Bend, TX 77069
 +1 (704) 326-1626 &bull; [dan&#x40;danielrayjones&#x2e;com](mailto:dan&#x40;danielrayjones&#x2e;com)
 <span class="printonly"><br/>https://danielrayjones.com/</span>
 
-</section>
+</section><!-- /#contact -->
 
 <section id="summary">
 
@@ -40,7 +40,7 @@ Fort Bend, TX 77069
 - Google App Engine
 {.skills}
 
-</section>
+</section><!-- /#summary -->
 
 <section id="projects">
 
@@ -48,61 +48,68 @@ Fort Bend, TX 77069
 
 <section class="projects">
 
-<section class="project">
+<section class="project middleware">
 
-### [gin error middleware](https://pkg.go.dev/codeberg.org/danjones000/gin-error-handler)
+### gin error middleware
 
+[🔗](https://pkg.go.dev/codeberg.org/danjones000/gin-error-handler)
 A middleware for go gin framework and wrapper functions to make handling errors easier and more idiomatic.
 
-</section><!-- /middleware -->
+</section><!-- /.project.middleware -->
 
-<section class="project">
+<section class="project responsable">
 
-### [Responsable Errors](https://pkg.go.dev/codeberg.org/danjones000/responsable-errors)
+### Responsable Errors
 
+[🔗](https://pkg.go.dev/codeberg.org/danjones000/responsable-errors)
 A small go library that provides errors that can be more useful in the context of a web app. The heart of gin error middleware.
 
-</section><!-- /responsable -->
+</section><!-- /.project.responsable -->
 
-<section class="project">
+<section class="project log">
 
-### [droplogger](https://gitlab.com/danjones000/droplogger)
+### droplogger
 
+[🔗](https://gitlab.com/danjones000/droplogger)
 Python logging application especially suited for life-logging with IFTTT and Dropbox.
 
-#### [my-log](https://codeberg.org/danjones000/my-log/)
+#### my-log
 
+[🔗](https://codeberg.org/danjones000/my-log/)
 A work-in-progress complete rewrite of droplogger in go.
 
-</section><!-- /log -->
+</section><!-- /.project.log -->
 
-<section class="project">
+<section class="project strip-beats">
 
-### [strip-beats](https://codeberg.org/danjones000/strip-beats)
+### strip-beats
 
+[🔗](https://codeberg.org/danjones000/strip-beats)
 go cli app for transforming a folder of music videos and music files, with semi-automatic tagging, and user-friendly TUI. *This is a work in progress. Not yet fully functional.*
 
-</section><!-- /beats -->
+</section><!-- /.project.strip-beats -->
 
-<section class="project">
+<section class="project object-spy">
 
-### [Object Spy](https://packagist.org/packages/danjones000/object-spy)
+### Object Spy
 
+[🔗](https://packagist.org/packages/danjones000/object-spy)
 PHP debugging library that makes it easy to inspect private properties and methods without using reflection.
 
-</section><!-- /spy -->
+</section><!-- /.project.object-spy -->
 
-<section class="project">
+<section class="project go-status">
 
-### [http go status](https://codeberg.org/danjones000/http-go-status)
+### http go status
 
+[🔗](https://codeberg.org/danjones000/http-go-status)
 Super simple web server that just returns the HTTP status you ask for. Useful for testing.
 
-</section><!-- /status -->
+</section><!-- /.project.go-status -->
 
 </section><!-- /.projects -->
 
-</section>
+</section><!-- /#projects -->
 
 <section id="workhistory">
 
@@ -133,14 +140,6 @@ Super simple web server that just returns the HTTP status you ask for. Useful fo
   
   Laravel/Lumen, PHP, PHPUnit, MySQL, Google Cloud Platform, Google App Engine, Google Cloud SQL, mongodb, redis, Google Datastore, Google Cloud Storage
   {.tech}
-- **University of Texas Coding Bootcamp**   
-  *Instructor*   
-  <span class="work-period"><time datetime="2016-10">October 2016</time> - <time datetime="2017-05">May 2017</time></span>
-  
-  Taught Full-stack coding bootcamp. Six month program to introduce students to basics of full-stack <abbr title="Mean, Express, React, Node">MERN</abbr> development.
-  
-  HTML, CSS, Javascript, jQuery, APIs, AJAX, Node, Express, MySQL, sequelize, MongoDB, mongoose, PHP, Laravel, Python, React, React-Native
-  {.tech}
 - [**Analyte Health**](https://www.analytehealth.com/)   
   *Senior Full-Stack Developer*   
   <span class="work-period"><time datetime="2016-07">July 2016</time> - <time datetime="2017-10">October 2017</time></span>
@@ -148,6 +147,14 @@ Super simple web server that just returns the HTTP status you ask for. Useful fo
   Full-stack development for multiple websites in the health industry, including [STDCheck](https://www.stdcheck.com/), [HealthLabs](https://www.healthlabs.com), [UTI Treatment](https://www.utitreatment.com/).
   
   PHP, PHPUnit, MySQL, Laravel, Eloquent, Javascript, jQuery, AngularJS, React
+  {.tech}
+- **Trilogy Education in association with the University of Texas**   
+  *Bootcamp Instructor*   
+  <span class="work-period"><time datetime="2016-10">October 2016</time> - <time datetime="2017-05">May 2017</time></span>
+  
+  Taught Full-stack coding bootcamp. Six month program to introduce students to basics of full-stack <abbr title="Mean, Express, React, Node">MERN</abbr> development.
+  
+  Eucation, HTML, CSS, Javascript, jQuery, APIs, AJAX, Node, Express, MySQL, sequelize, MongoDB, mongoose, PHP, Laravel, Python, React, React Native
   {.tech}
 - [**Server Monkey**](https://servermonkey.com/)   
   *Back-end web developer*   
@@ -197,7 +204,7 @@ Super simple web server that just returns the HTTP status you ask for. Useful fo
   + [*Joe Stryker*](https://web.archive.org/web/20090428115520/http://joestryker.com/)
 {.history}
 
-</section>
+</section><!-- /#workhistory -->
 
 <section id="codesamples" class="noprint">
 
@@ -208,4 +215,4 @@ Super simple web server that just returns the HTTP status you ask for. Useful fo
 - [GitHub](https://github.com/goodevilgenius)
 - [GitHub Gists](https://gist.github.com/goodevilgenius)
 
-</section>
+</section><!-- /#codesamples -->

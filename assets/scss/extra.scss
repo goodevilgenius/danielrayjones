@@ -54,10 +54,7 @@ ul.skills {
     }
 
     .project {
-        h3 > a {
-            text-decoration: none;
-        }
-        h4 > a {
+        a {
             text-decoration: none;
         }
         @media print {
