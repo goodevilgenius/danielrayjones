@@ -24,13 +24,13 @@
             {{ if .Params.Cover }}
                 <figure class="post-cover">
                     <img src="{{ .Params.Cover | absURL }}" alt="{{ .Title }}" />
-                
+
                     {{ if .Params.CoverCaption }}
                         <figcaption class="center">{{ .Params.CoverCaption | markdownify }}</figcaption>
                     {{ end }}
                 </figure>
             {{ end }}
-            
+
             {{ if .Params.toc }}
                 <hr />
                 <aside id="toc">
@@ -47,6 +47,9 @@
                         {{ $toc = strings.TrimSuffix "</ul>\n</nav>" $toc }}
                         {{ $toc | safeHTML }}
                     </ul>
+                    {{ with .Resources.GetMatch "dan-jones-resume.pdf" }}
+                    <p><a href="{{ .RelPermalink }}">Download a PDF</a></p>
+                    {{ end }}
                 </nav>
                 </aside>
                 <hr />
