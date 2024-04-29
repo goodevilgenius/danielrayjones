@@ -41,10 +41,15 @@ I was first exposed to computers as a child. My family had a Commodore 64, on wh
       <link>https://danielrayjones.com/web/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://danielrayjones.com/web/</guid>
-      <description>Fort Bend, TX 77069
-+1 (704) 326-1626 • dan@danielrayjones.com https://danielrayjones.com/
-Skills HTML CSS SCSS JavaScript vue.js jQuery AJAX React PHP go MySQL Laravel Yii Wordpress Git node.js MongoDB Linux Docker AWS Google App Engine Open Source Projects gin error middleware A middleware for go gin framework and wrapper functions to make handling errors easier and more idiomatic.
-Responsable Errors A small go library that provides errors that can be more useful in the context of a web app.</description>
+      <description>Work Experience GRIN
+Principal Software Engineer/Back-end Architect
+August 2021 - present
+Principal full-stack developer for SaaS company in creator marketing. Built out unit testing in Laravel project. Coached junior developers. Helped set standards for back-end architecture. Built microservices in go.
+Laravel, PHP, go, microservices, PHPUnit, MySql, mongodb, Vue
+BubbleUp
+Senior Web Developer
+February 2020 - July 2021
+Senior Developer for marketing firm with clients in multiple industries. Sites range from low traffic, to extremely high.</description>
     </item>
   </channel>
 </rss>
