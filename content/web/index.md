@@ -13,8 +13,13 @@ Description = "Experienced web developer"
   *Principal Software Engineer/Back-end Architect*   
   <span class="work-period"><time datetime="2021-08">August 2021</time> - present</span>
   
-  Principal full-stack developer for SaaS company in creator marketing. Built out unit testing in Laravel project. Coached junior developers. Helped set standards for back-end architecture.
-  Built microservices in go.
+  Principal Engineer and Architect at social media SaaS company
+  
+  + Improved code quality by implementing unit testing framework
+  + Contributed to end-to-end testing framework in Python
+  + Improved platform stability through the addition of microservices in go
+  + Held training sessions for development team
+  + Interviewed prospective new hires
   
   Laravel, PHP, go, microservices, PHPUnit, MySql, mongodb, Vue
   {.tech}
@@ -26,11 +31,17 @@ Description = "Experienced web developer"
   
   Yii, WordPress, PHP, MySQL, AWS, Drupal, custom sites
   {.tech}
-- [**Starfish**](https://www.raven.com/)   
+- [**Raven**](https://www.raven.com/)   
   *Project Manager/Tech Lead*   
   <span class="work-period"><time datetime="2017-10">October 2017</time> - <time datetime="2020-01">January 2020</time></span>
   
-  Lead for API project. Developed Laravel-based API for document management service. Managed team. Set goals. Ensured development was on track.
+  Lead for API project. Developed Laravel-based API for document management service.
+  
+  + Partner with CEO to develop technical vision
+  + Articulate vision to stakeholders
+  + Supervised team of five developers
+  + Mentored and encouraged junior developers
+  + Ran weekly Scrum meetings
   
   Laravel/Lumen, PHP, PHPUnit, MySQL, Google Cloud Platform, Google App Engine, Google Cloud SQL, mongodb, redis, Google Datastore, Google Cloud Storage
   {.tech}
@@ -40,13 +51,17 @@ Description = "Experienced web developer"
   
   Full-stack development for multiple websites in the health industry, including [STDCheck](https://www.stdcheck.com/), [HealthLabs](https://www.healthlabs.com), [UTI Treatment](https://www.utitreatment.com/).
   
+  + Spearheaded significant code refactor, leading to better code quality and mainainability
+  + Developed secure applications, compiant with HIPAA regulations
+  + Built frontend components in AngularJS and React
+  
   PHP, PHPUnit, MySQL, Laravel, Eloquent, Javascript, jQuery, AngularJS, React
   {.tech}
 - **Trilogy Education in association with the University of Texas**   
   *Bootcamp Instructor*   
   <span class="work-period"><time datetime="2016-10">October 2016</time> - <time datetime="2017-05">May 2017</time></span>
   
-  Taught Full-stack coding bootcamp. Six month program to introduce students to basics of full-stack <abbr title="Mean, Express, React, Node">MERN</abbr> development.
+  Taught Full-stack coding bootcamp. Six month program to introduce students to basics of full-stack MERN development and computer science principles.
   
   Eucation, HTML, CSS, Javascript, jQuery, APIs, AJAX, Node, Express, MySQL, sequelize, MongoDB, mongoose, PHP, Laravel, Python, React, React Native
   {.tech}
@@ -54,11 +69,10 @@ Description = "Experienced web developer"
   *Back-end web developer*   
   <span class="work-period"><time datetime="2015-11">November 2015</time> - <time datetime="2016-07">July 2016</time></span>
   
-  Develop Magento-based eCommerce site <span class="tech">PHP, MySQL, Magento, XML, Javascript, jQuery</span>
-
-  + Extend functionality of current site
-  + Modify existing site plugins to better fit workflow of sales team.
-  {.noprint}
+  Develop Magento-based eCommerce site
+  
+  PHP, MySQL, Magento, XML, Javascript, jQuery
+  {.tech}
 - **Hubbard Radio** &ndash; [**WTOP**](https://wtop.com/)/[**Federal News Radio**](https://federalnewsradio.com/)   
   *Back-end web developer*   
   <span class="work-period"><time datetime="2010-07">July 2010</time> - <time datetime="2015-11">November 2015</time></span>
