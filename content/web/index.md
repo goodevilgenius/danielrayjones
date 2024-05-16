@@ -51,8 +51,8 @@ Description = "Experienced web developer"
   
   Full-stack development for multiple websites in the health industry, including [STDCheck](https://www.stdcheck.com/), [HealthLabs](https://www.healthlabs.com), [UTI Treatment](https://www.utitreatment.com/).
   
-  + Spearheaded significant code refactor, leading to better code quality and mainainability
-  + Developed secure applications, compiant with HIPAA regulations
+  + Spearheaded significant code refactor, leading to better code quality and maintainability
+  + Developed secure applications, compliant with HIPAA regulations
   + Built frontend components in AngularJS and React
   
   PHP, PHPUnit, MySQL, Laravel, Eloquent, Javascript, jQuery, AngularJS, React
