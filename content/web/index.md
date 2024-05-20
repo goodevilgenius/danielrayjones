@@ -15,11 +15,12 @@ Description = "Experienced web developer"
   
   Principal Engineer and Architect at social media SaaS company
   
-  + Improved code quality by implementing unit testing framework
+  + Enabled engineering team to focus more on feature work by implementing unit testing framework
   + Contributed to end-to-end testing framework in Python
   + Improved platform stability through the addition of microservices in go
   + Held training sessions for development team
   + Interviewed prospective new hires
+  + Expanded platform with multiple Vue components
   
   Laravel, PHP, go, microservices, PHPUnit, MySql, mongodb, Vue
   {.tech}

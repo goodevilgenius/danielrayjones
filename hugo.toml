@@ -21,6 +21,10 @@ logoText = "RUN"
 path = "https://www.gravatar.com/avatar/073daa566095477f8ecc5cf4d0f59448"
 
 [[params.social]]
+name = "linkedin"
+url = "https://www.linkedin.com/in/danjones000/"
+
+[[params.social]]
 name = "gitea"
 url = "https://codeberg.org/danjones000/"
 
@@ -31,10 +35,6 @@ url = "https://gitlab.com/danjones000/"
 [[params.social]]
 name = "github"
 url = "https://github.com/goodevilgenius/"
-
-[[params.social]]
-name = "linkedin"
-url = "https://www.linkedin.com/in/danjones000/"
 
 [[params.social]]
 name = "matrix"
