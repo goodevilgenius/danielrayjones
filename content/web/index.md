@@ -114,3 +114,13 @@ Description = "Experienced web developer"
 {.history}
 
 </section><!-- /#workhistory -->
+
+<section id="education">
+
+## Education
+
+University of Texas at Austin   
+August 2024 - May 2028   
+Bachelor of the Arts - Theater
+
+</section><!-- /#education -->
