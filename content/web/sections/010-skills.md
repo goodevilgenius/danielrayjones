@@ -13,6 +13,7 @@ id: skills
 - React
 - PHP
 - go
+- microservices
 - MySQL
 - Laravel
 - Yii
@@ -24,4 +25,5 @@ id: skills
 - Docker
 - AWS
 - Google App Engine
+- Leadership
 {.skills}

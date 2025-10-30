@@ -5,6 +5,24 @@ id: projects
 
 <section class="projects">
 
+<section class="project ezcache">
+
+### ezcache
+
+<a href="https://pkg.go.dev/codeberg.org/danjones000/ezcache" class="noprint">🔗</a>
+Dead simple in-memory caching library for go.
+
+</section><!-- /.project.ezcache -->
+
+<section class="project nomino">
+
+### nomino
+
+<a href="https://pkg.go.dev/codeberg.org/danjones000/nomino" class="noprint">🔗</a>
+go library for random filename generation.
+
+</section><!-- /.project.nomino -->
+
 <section class="project middleware">
 
 ### gin error middleware

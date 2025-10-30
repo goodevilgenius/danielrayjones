@@ -9,9 +9,24 @@ Description = "Experienced web developer"
 
 ## Work Experience
 
+- [**Oteemo**](https://oteemo.com/)   
+  *Senior Consultant*   
+  <span class="work-period"><time datetime="2021-09">September 2024<time> - present</span>
+  
+  Senior Engineer on the US Air Force [Platform One](https://p1.dso.mil/) Vulnerability Assessment Tracker, tracking security vulnerabilities in a hardened Docker registry. Led migration of infrastructure to microservices. Mentored Junior Developers. Interviewed potential team members. Led team meetings.
+  
+  go, microservices, node, MySql, React, Docker
+  {.tech}
+
+- [**LenderHomePage**](https://lenderhomepage.com)   
+  *Principal Software Engineer*   
+  <span class="work-period"><time datetime="2021-08">August 2024</time> - <time datetime="2021-09">September 2024<time></span>
+  
+  Laravel, PHP, microservices, MySql
+  {.tech}
 - [**GRIN**](https://grin.co)   
   *Principal Software Engineer/Back-end Architect*   
-  <span class="work-period"><time datetime="2021-08">August 2021</time> - present</span>
+  <span class="work-period"><time datetime="2021-08">August 2021</time> - <time datetime="2024-05">May 2024</time></span>
   
   Principal Engineer and Architect at social media SaaS company
   
@@ -120,7 +135,7 @@ Description = "Experienced web developer"
 ## Education
 
 University of Texas at Austin   
-August 2024 - May 2028   
+August 2004 - May 2008   
 Bachelor of the Arts - Theater
 
 </section><!-- /#education -->
