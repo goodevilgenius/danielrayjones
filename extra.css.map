@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "extra.css",
-	"sourceRoot": "/tmp/danielrayjones",
+	"sourceRoot": "/home/drj/Documents/repos/personal/docs/danielrayjones",
 	"sources": [
 		"assets/scss/extra.scss",
 		"themes/hello-friend-ng/assets/scss/_variables.scss"
