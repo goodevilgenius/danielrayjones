@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "main.css",
-	"sourceRoot": "/home/drj/Documents/repos/personal/docs/danielrayjones",
+	"sourceRoot": "/home/drj/.config/forgejo/data/forgejo-repositories/dan/drj-staging",
 	"sources": [
 		"themes/hello-friend-ng/assets/scss/main.scss",
 		"themes/hello-friend-ng/assets/scss/_normalize.scss",
