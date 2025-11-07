@@ -15,7 +15,7 @@ mask = "#5bbad5"
 msapplication = "#2d89ef"
 
 [params.logo]
-logoText = "C:\DOS\RUN"
+logoText = "/usr/bin/run"
 
 [params.portrait]
 path = "https://www.gravatar.com/avatar/073daa566095477f8ecc5cf4d0f59448"
