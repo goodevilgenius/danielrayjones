@@ -20,12 +20,6 @@ figure {
     }
 }
 
-ul.skills {
-    display: grid;
-    grid-gap: .25rem;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-}
-
 #projects > .projects {
     @media print {
         display: grid;
