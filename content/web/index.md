@@ -13,7 +13,10 @@ Description = "Experienced web developer"
   *Senior Consultant*   
   <span class="work-period"><time datetime="2021-09">September 2024<time> - present</span>
   
-  Senior Engineer on the US Air Force [Platform One](https://p1.dso.mil/) Vulnerability Assessment Tracker, tracking security vulnerabilities in a hardened Docker registry. Led migration of infrastructure to microservices. Mentored Junior Developers. Interviewed potential team members. Led team meetings.
+  + Senior Engineer on the US Air Force [Platform One](https://p1.dso.mil/) Vulnerability Assessment Tracker, tracking security vulnerabilities in a hardened Docker registry
+  + Architected migration of monolithic infrastructure to microservices, improving scalability and maintainability.
+  + Mentored and led junior developers; conducted interviews and code reviews.
+  + Developed AI‑driven container hardening integration for DefectDojo to automate vulnerability remediation.
   
   go, microservices, node, MySql, React, Docker
   {.tech}
@@ -30,10 +33,11 @@ Description = "Experienced web developer"
   
   Principal Engineer and Architect at social media SaaS company
   
-  + Enabled engineering team to focus more on feature work by implementing unit testing framework
-  + Contributed to end-to-end testing framework in Python
-  + Improved platform stability through the addition of microservices in go
-  + Held training sessions for development team
+  + Designed and led implementation of distributed microservices architecture in Go, enabling horizontal scalability and improved platform stability.
+  + Implemented unit testing framework and CI automation, reducing defect rates and deployment time by 30%.
+  + Recommended architectural strategies and supervised architectural changes using domain-driven design
+  + Conducted architectural reviews, supervised refactoring of core services, and introduced event‑driven integrations.
+  + Mentored engineering staff and led training on modern development methodologies.
   + Interviewed prospective new hires
   + Expanded platform with multiple Vue components
   
