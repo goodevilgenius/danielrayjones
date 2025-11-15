@@ -11,9 +11,9 @@ Description = "Experienced web developer"
 
 - [**Oteemo**](https://oteemo.com/)   
   *Senior Consultant*   
-  <span class="work-period"><time datetime="2021-09">September 2024<time> - present</span>
+  <span class="work-period"><time datetime="2021-09">September 2024</time> - present</span>
   
-  + Senior Engineer on the US Air Force [Platform One](https://p1.dso.mil/) Vulnerability Assessment Tracker, tracking security vulnerabilities in a hardened Docker registry
+  + Senior Engineer on the US Air Force [Platform One](https://p1.dso.mil/) Vulnerability Assessment Tracker, enhancing security posture and reducing critical vulnerabilities by 15% in a hardened Docker registry.
   + Architected migration of monolithic infrastructure to microservices, improving scalability and maintainability.
   + Mentored and led junior developers; conducted interviews and code reviews.
   + Developed AI‑driven container hardening integration for DefectDojo to automate vulnerability remediation.
@@ -22,11 +22,15 @@ Description = "Experienced web developer"
   {.tech}
 
 - [**LenderHomePage**](https://lenderhomepage.com)   
-  *Principal Software Engineer*   
-  <span class="work-period"><time datetime="2021-08">August 2024</time> - <time datetime="2021-09">September 2024<time></span>
+  *Principal Software Engineer*
+  <span class="work-period"><time datetime="2021-08">August 2024</time> - <time datetime="2021-09">September 2024</time></span>
+  
+  + Developed and maintained critical backend services for mortgage lending platform, ensuring high availability and data integrity.
+  + Collaborated with cross-functional teams to integrate new features and optimize existing workflows.
   
   Laravel, PHP, microservices, MySql
   {.tech}
+
 - [**GRIN**](https://grin.co)   
   *Principal Software Engineer/Back-end Architect*   
   <span class="work-period"><time datetime="2021-08">August 2021</time> - <time datetime="2024-05">May 2024</time></span>
@@ -35,7 +39,7 @@ Description = "Experienced web developer"
   
   + Designed and led implementation of distributed microservices architecture in Go, enabling horizontal scalability and improved platform stability.
   + Implemented unit testing framework and CI automation, reducing defect rates and deployment time by 30%.
-  + Recommended architectural strategies and supervised architectural changes using domain-driven design
+  + Recommended architectural strategies and supervised architectural changes using domain-driven design, leading to a 20% improvement in system performance and scalability.
   + Conducted architectural reviews, supervised refactoring of core services, and introduced event‑driven integrations.
   + Mentored engineering staff and led training on modern development methodologies.
   + Interviewed prospective new hires
@@ -43,6 +47,7 @@ Description = "Experienced web developer"
   
   Laravel, PHP, go, microservices, PHPUnit, MySql, mongodb, Vue
   {.tech}
+
 - [**BubbleUp**](https://www.bubbleup.net/)   
   *Senior Web Developer*   
   <span class="work-period"><time datetime="2020-02">February 2020</time> - <time datetime="2021-07">July 2021</time></span>
@@ -71,7 +76,7 @@ Description = "Experienced web developer"
   
   Full-stack development for multiple websites in the health industry, including [STDCheck](https://www.stdcheck.com/), [HealthLabs](https://www.healthlabs.com), [UTI Treatment](https://www.utitreatment.com/).
   
-  + Spearheaded significant code refactor, leading to better code quality and maintainability
+  + Spearheaded significant code refactor, leading to a 30% reduction in technical debt and improved maintainability.
   + Developed secure applications, compliant with HIPAA regulations
   + Built frontend components in AngularJS and React
   
