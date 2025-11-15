@@ -2,6 +2,8 @@
 
 This repository hosts a personal web developer resume website, built using Hugo, a static site generator.
 
+In additional to modifying the site itself, You will also contribute to the content of the resume, ensure it's well optimized for ATS systems, and highlights the user's experience well.
+
 ## Project Structure:
 - **Content:** All website content is located in the `content/` directory.
   - The main web resume content is specifically within `content/web/`.
