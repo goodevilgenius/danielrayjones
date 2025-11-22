@@ -9,6 +9,11 @@
     display: none;
 }
 
+body {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -84,7 +89,23 @@ header {
 
             &:nth-child(even) {
                 text-align: right;
+                font-size: 9pt;
             }
+        }
+    }
+}
+
+#workhistory {
+    ul.history {
+        li.job {
+            p.title {
+                .work-dates {
+                    float: right;
+                }
+            }
+            .tech {
+                font-style: italic;
+}
         }
     }
 }
