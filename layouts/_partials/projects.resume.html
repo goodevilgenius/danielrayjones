@@ -1,0 +1,9 @@
+{{ with . | transform.Unmarshal -}}
+<ul>
+{{- range $project := . -}}
+{{- range $slug, $proj := $project }}
+    <li class="project {{ $slug }}"><a href="{{ $proj.url }}">{{ $proj.name }}</a> {{ $proj.desc }}</li>
+{{- end -}}
+{{- end }}
+</ul>
+{{- end }}

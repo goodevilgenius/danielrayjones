@@ -4,6 +4,13 @@ title = "Dan Jones"
 theme = "hello-friend-ng"
 enableGitInfo = true
 
+[outputFormats]
+
+[outputFormats.resume]
+mediaType = "text/html"
+isHTML = true
+baseName = "dan-jones-resume"
+
 [params]
 homeSubtitle = "Web developer, actor, jack of some trades"
 EnableThemeToggle = true

@@ -3,7 +3,8 @@ title = "Web Résumé"
 post_title = "🧑‍💻 Dan Jones"
 toc = true
 layout = "web-resume"
-Description = "Experienced web developer"
+Description = "Software Engineer and Architect"
+outputs = ['html','resume']
 +++
 <section id="workhistory">
 

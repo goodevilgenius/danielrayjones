@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        {{ $options := (dict "targetPath" "resume.css" "outputStyle" "compressed" "enableSourceMap" true) }}
+        {{ $style := resources.Get "scss/resume.scss" | css.Sass $options | resources.Fingerprint }}
+        <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
+
+    </head>
+<body>
+
+    <header>
+    <h1>{{ with .Params.post_title }}{{ . | markdownify }}{{ else }}{{ .Title | markdownify }}{{ end }}</h1>
+    {{ with .Params.Description }}<p>{{ . | markdownify }}</p>{{ end }}
+    </header>
+
+    {{ with .Resources.Get "sections/005-contact.md" }}
+    <aside id="{{ .Params.id }}" class="{{ .Params.class }}">
+        {{ .Content }}
+    </aside>
+    {{ end }}
+
+    {{ with .Resources.Get "sections/007-summary.md" }}
+    <aside id="{{ .Params.id }}" class="{{ .Params.class }}">
+        <h2>Objectives</h3>
+        {{ .Content }}
+    </aside>
+    {{ end }}
+
+    {{ with .Resources.Get "sections/010-skills.md" }}
+    <aside id="{{ .Params.id }}" class="{{ .Params.class }}">
+        {{ .Content }}
+    </aside>
+    {{ end }}
+
+    <div class="post-content">
+        {{ .Content }}
+    </div>
+
+    {{ with .Resources.Get "data/projects.yaml" }}
+    <aside id="projects">
+        {{ partial "projects.resume.html" . }}
+    </aside>
+    {{ end }}
+
+</body>
+</html>
