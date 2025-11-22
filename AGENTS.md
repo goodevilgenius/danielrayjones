@@ -2,12 +2,11 @@
 
 This repository hosts a personal web developer resume website, built using Hugo, a static site generator.
 
-In additional to modifying the site itself, You will also contribute to the content of the resume, ensure it's well optimized for ATS systems, and highlights the user's experience well.
-
 ## Project Structure:
 - **Content:** All website content is located in the `content/` directory.
   - The main web resume content is specifically within `content/web/`.
-  - Individual sections of the resume are organized as markdown files (e.g., `005-contact.md`, `010-skills.md`).
+    - Individual sections of the resume are organized as markdown files under the `sections` folder (e.g., `head-005-contact.md`, `foot-015-edu.md`).
+    - Structured data for some sections are under the `data` folder. Currently, this includes `jobs.yaml` which includes employment history, and `projects.toml` which includes open source projects.
 - **Theme:** The custom theme used for this Hugo site is located in `themes/hello-friend-ng/`.
 - **Configuration:** The main Hugo configuration file is `hugo.toml` in the repository root.
 
@@ -16,6 +15,12 @@ In additional to modifying the site itself, You will also contribute to the cont
 - **Styling/Theming:** For any styling or theme-related changes, investigate the `themes/hello-friend-ng/` directory and additional layout files under layouts/
 - **Hugo Build Process:** Remember this is a static site. Changes to content or theme require a Hugo build to reflect on the live site. (Agents do not need to run the build, but should be aware of it).
 - **File Types:** Prioritize editing existing markdown (`.md`) and HTML (`.html`) files for content and layout, and SCSS (`.scss`) for styling. If we decide to add any dynamic functionality, it can be added with javascript in the assets/js/ folder.
+
+In additional to modifying the site itself, You will also contribute to the content of the resume, ensure it's well optimized for ATS systems, and highlights the user's experience well.
+
+When asked to optimize the resume, you should focus on the sections under `content/web/sections` and the data files under `content/web/data`.
+
+When asked to optimize the layout for ATS systems and job applications, you should focus on the print layout, `layouts/_default/web-resume.resume.html` and the partials under `layouts/_partials/`: `jobs.resume.html` and `projects.resume.html`.
 
 ## Git Commit Guidelines
 - **Format**: Prepend commit messages with a gitmoji emoji (see https://gitmoji.dev)
