@@ -1,6 +1,6 @@
 +++
 title = "Web Résumé"
-post_title = "Dan Jones"
+post_title = "🧑‍💻 Dan Jones"
 toc = true
 layout = "web-resume"
 Description = "Experienced web developer"
