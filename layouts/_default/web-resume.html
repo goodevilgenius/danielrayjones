@@ -58,7 +58,7 @@
                 <aside id="{{ .Params.id }}" class="{{ .Params.class }}">
                     {{ .Content }}
                     {{- if eq .Params.id "projects" }}
-                    {{ $dataPath := "data/projects.yaml" }}
+                    {{ $dataPath := "data/projects.toml" }}
                     {{ with $.Resources.Get $dataPath }}
                     {{ partial "projects.html" . }}
                     {{ else }}

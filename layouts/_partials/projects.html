@@ -2,15 +2,15 @@
 
     {{ with . | transform.Unmarshal -}}
     {{- range $project := . -}}
-    {{- range $slug, $proj := $project -}}
-    <section class="project {{ $slug }}">
+    {{- range $proj := $project -}}
+    <section class="project {{ $proj.slug }}">
 
         <h3>{{ $proj.name }}</h3>
 
         <p><a href="{{ $proj.url }}" class="noprint">🔗</a>
             {{ $proj.desc }}</p>
 
-    </section><!-- /.project.{{ $slug }} -->
+    </section><!-- /.project.{{ $proj.slug }} -->
     {{- end -}}
     {{- end -}}
     {{- end }}

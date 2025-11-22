@@ -43,7 +43,7 @@
         {{ .Content }}
     </div>
 
-    {{ with .Resources.Get "data/projects.yaml" }}
+    {{ with .Resources.Get "data/projects.toml" }}
     <aside id="projects">
         {{ partial "projects.resume.html" . }}
     </aside>
