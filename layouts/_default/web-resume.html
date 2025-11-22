@@ -57,6 +57,14 @@
             {{ range .Resources.Match "sections/*.md" }}
                 <aside id="{{ .Params.id }}" class="{{ .Params.class }}">
                     {{ .Content }}
+                    {{- if eq .Params.id "projects" }}
+                    {{ $dataPath := "data/projects.yaml" }}
+                    {{ with $.Resources.Get $dataPath }}
+                    {{ partial "projects.html" . }}
+                    {{ else }}
+                    {{ errorf "Unable to get %s" $dataPath }}
+                    {{ end }}
+                    {{ end }}
                 </aside>
             {{ end }}
 
