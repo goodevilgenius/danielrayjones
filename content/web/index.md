@@ -144,8 +144,14 @@ outputs = ['html','resume']
 
 ## Education
 
-University of Texas at Austin   
-August 2004 - May 2008   
-Bachelor of the Arts - Theater
+<div class="container">
+
+**Bachelor of the Arts - Theater**
+
+University of Texas at Austin
+
+August 2004 - May 2008
+
+</div>
 
 </section><!-- /#education -->

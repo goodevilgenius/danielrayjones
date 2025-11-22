@@ -104,6 +104,28 @@ figure {
     }
 }
 
+#education {
+    .container {
+        padding: 20px;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        & > * {
+            padding: 0;
+            margin: 0;
+
+            &:nth-child(odd) {
+                text-align: left;
+            }
+
+            &:nth-child(even) {
+                text-align: right;
+            }
+        }
+    }
+}
+
 section > h2 {
     line-height: 1.0;
 }

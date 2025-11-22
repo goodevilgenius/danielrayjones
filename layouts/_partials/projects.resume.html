@@ -1,4 +1,5 @@
 {{ with . | transform.Unmarshal -}}
+<h2>Selected Open Source Projects</h2>
 <ul>
 {{- range $project := . -}}
 {{- range $slug, $proj := $project }}

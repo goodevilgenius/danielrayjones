@@ -2,6 +2,12 @@
 <html>
     <head>
 
+        <title>{{ .Title }}</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Scope+One&display=swap" rel="stylesheet">
+
         {{ $options := (dict "targetPath" "resume.css" "outputStyle" "compressed" "enableSourceMap" true) }}
         {{ $style := resources.Get "scss/resume.scss" | css.Sass $options | resources.Fingerprint }}
         <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
