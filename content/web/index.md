@@ -139,19 +139,3 @@ outputs = ['html','resume']
 {.history}
 
 </section><!-- /#workhistory -->
-
-<section id="education">
-
-## Education
-
-<div class="container">
-
-**Bachelor of the Arts - Theater**
-
-University of Texas at Austin
-
-August 2004 - May 2008
-
-</div>
-
-</section><!-- /#education -->

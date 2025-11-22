@@ -37,7 +37,7 @@
                 <div class="toc-title">{{ i18n "tableOfContents" }}</div>
                 <nav id="TableOfContents">
                     <ul>
-                        {{ range .Resources.Match "sections/*.md" }}
+                        {{ range .Resources.Match "sections/head-*.md" }}
                             {{ $toc := strings.Substr .TableOfContents 37 }}
                             {{ $toc = strings.TrimSuffix "</ul>\n</nav>" $toc }}
                             {{ $toc | safeHTML }}
@@ -46,6 +46,12 @@
                         {{ $toc := strings.Substr .TableOfContents 37 }}
                         {{ $toc = strings.TrimSuffix "</ul>\n</nav>" $toc }}
                         {{ $toc | safeHTML }}
+
+                        {{ range .Resources.Match "sections/foot-*.md" }}
+                            {{ $toc := strings.Substr .TableOfContents 37 }}
+                            {{ $toc = strings.TrimSuffix "</ul>\n</nav>" $toc }}
+                            {{ $toc | safeHTML }}
+                        {{ end }}
                     </ul>
                     {{ with .Resources.GetMatch "dan-jones-resume.pdf" }}
                     <p><a href="{{ .RelPermalink }}">Download a PDF</a></p>
@@ -54,7 +60,7 @@
                 </aside>
                 <hr />
             {{ end }}
-            {{ range .Resources.Match "sections/*.md" }}
+            {{ range .Resources.Match "sections/head-*.md" }}
                 <aside id="{{ .Params.id }}" class="{{ .Params.class }}">
                     {{ .Content }}
                     {{- if eq .Params.id "projects" }}
@@ -71,6 +77,12 @@
             <div class="post-content">
                 {{ .Content }}
             </div>
+
+            {{ range .Resources.Match "sections/foot-*.md" }}
+            <aside id="{{ .Params.id }}" class="{{ .Params.class }}">
+                {{ .Content }}
+            </aside>
+            {{ end }}
         </article>
 
         <hr />

@@ -20,20 +20,20 @@
     {{ with .Params.Description }}<p>{{ . | markdownify }}</p>{{ end }}
     </header>
 
-    {{ with .Resources.Get "sections/005-contact.md" }}
+    {{ with .Resources.Get "sections/head-005-contact.md" }}
     <aside id="{{ .Params.id }}" class="{{ .Params.class }}">
         {{ .Content }}
     </aside>
     {{ end }}
 
-    {{ with .Resources.Get "sections/007-summary.md" }}
+    {{ with .Resources.Get "sections/head-007-summary.md" }}
     <aside id="{{ .Params.id }}" class="{{ .Params.class }}">
         <h2>Objectives</h3>
         {{ .Content }}
     </aside>
     {{ end }}
 
-    {{ with .Resources.Get "sections/010-skills.md" }}
+    {{ with .Resources.Get "sections/head-010-skills.md" }}
     <aside id="{{ .Params.id }}" class="{{ .Params.class }}">
         {{ .Content }}
     </aside>
@@ -42,6 +42,12 @@
     <div class="post-content">
         {{ .Content }}
     </div>
+
+    {{ with .Resources.Get "sections/foot-015-edu.md" }}
+    <aside id="{{ .Params.id }}" class="{{ .Params.class }}">
+        {{ .Content }}
+    </aside>
+    {{ end }}
 
     {{ with .Resources.Get "data/projects.toml" }}
     <aside id="projects">
