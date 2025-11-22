@@ -1,0 +1,63 @@
+[[projects]]
+
+slug = "ezcache"
+name = "ezcache"
+url = "https://pkg.go.dev/codeberg.org/danjones000/ezcache"
+desc = "Dead simple in-memory caching library for Go, designed to improve application performance by reducing database load and API calls."
+
+
+[[projects]]
+
+slug = "nomino"
+name = "nomino"
+url = "https://pkg.go.dev/codeberg.org/danjones000/nomino"
+desc = "Go library for random filename generation, useful for creating unique identifiers and preventing naming conflicts."
+
+[[projects]]
+
+slug = "gin-error-middleware"
+name = "gin error middleware"
+url = "https://pkg.go.dev/codeberg.org/danjones000/gin-error-handler"
+desc = "A middleware for Go Gin framework and wrapper functions to make handling errors easier and more idiomatic, improving API robustness."
+
+[[projects]]
+
+slug = "responsable"
+name = "Responsable Errors"
+url = "https://pkg.go.dev/codeberg.org/danjones000/responsable-errors"
+desc = "A small Go library that provides errors that can be more useful in the context of a web app. The heart of gin error middleware, it enables structured and user-friendly error responses."
+
+[[projects]]
+
+slug = "droplogger"
+name = "droplogger"
+url = "https://gitlab.com/danjones000/droplogger"
+desc = "Python logging application especially suited for life-logging with IFTTT and Dropbox, providing automated personal data collection."
+
+[[projects]]
+
+slug = "my-log"
+name = "my-log"
+url = "https://codeberg.org/danjones000/my-log/"
+desc = "A work-in-progress complete rewrite of droplogger in Go, aiming for improved performance and maintainability."
+
+[[projects]]
+
+slug = "strip-beats"
+name = "strip-beats"
+url = "https://codeberg.org/danjones000/strip-beats"
+desc = "Go CLI app for transforming a folder of music videos and music files, with semi-automatic tagging and a user-friendly TUI, streamlining media organization. *This is a work in progress. Not yet fully functional.*"
+
+[[projects]]
+
+slug = "object-spy"
+name = "Object Spy"
+url = "https://packagist.org/packages/danjones000/object-spy"
+desc = "PHP debugging library that makes it easy to inspect private properties and methods without using reflection, simplifying complex debugging tasks."
+
+[[projects]]
+
+slug = "go-status"
+name = "http go status"
+url = "https://codeberg.org/danjones000/http-go-status"
+desc = "Super simple web server that just returns the HTTP status you ask for, useful for testing and debugging HTTP client behavior."
