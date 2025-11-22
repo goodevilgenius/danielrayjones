@@ -75,7 +75,18 @@
             {{ end }}
 
             <div class="post-content">
-                {{ .Content }}
+                {{ with .Resources.Get "data/jobs.yaml" }}
+                {{ with . | transform.Unmarshal -}}
+                <section id="workhistory">
+                    {{ $.Content }}
+                    {{ partial "jobs.html" . }}
+                </section>
+                {{ else }}
+                {{ errorf "Unable to parse jobs" }}
+                {{ end }}
+                {{ else }}
+                {{ errorf "Unable to read jobs" }}
+                {{ end }}
             </div>
 
             {{ range .Resources.Match "sections/foot-*.md" }}

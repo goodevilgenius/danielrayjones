@@ -1,0 +1,193 @@
+-
+  id: oteemo
+  name: Oteemo
+  url: https://oteemo.com/
+  title: Senior Consultant
+  start:
+    datetime: 2021-09
+    text: September 2024
+  end:
+    text: present
+  res:
+    - Senior Engineer on the US Air Force [Platform One](https://p1.dso.mil/) Vulnerability Assessment Tracker, enhancing security posture and reducing critical vulnerabilities by 15% in a hardened Docker registry.
+    - Architected migration of monolithic infrastructure to microservices, improving scalability and maintainability.
+    - Mentored and led junior developers; conducted interviews and code reviews.
+    - Developed AI‑driven container hardening integration for DefectDojo to automate vulnerability remediation.
+  tech: go, microservices, node, MySql, React, Docker
+
+-
+  id: lhp
+  name: LenderHomePage
+  url: https://lenderhomepage.com
+  title: Principal Software Engineer
+  start:
+    datetime: 2021-08
+    text: August 2024
+  end:
+    datetime: 2021-09
+    text: September 2024
+  res:
+    - Developed and maintained critical backend services for mortgage lending platform, ensuring high availability and data integrity.
+    - Collaborated with cross-functional teams to integrate new features and optimize existing workflows.
+  tech: Laravel, PHP, microservices, MySql
+
+-
+  id: grin
+  name: GRIN
+  url: https://grin.co/
+  title: Principal Software Engineer/Back-end Architect
+  start:
+    datetime: 2021-08
+    text: August 2021
+  end:
+    datetime: 2024-05
+    text: May 2024
+  headline: Principal Engineer and Architect at social media SaaS company
+  res:
+    - Designed and led implementation of distributed microservices architecture in Go, enabling horizontal scalability and improved platform stability.
+    - Implemented unit testing framework and CI automation, reducing defect rates and deployment time by 30%.
+    - Recommended architectural strategies and supervised architectural changes using domain-driven design, leading to a 20% improvement in system performance and scalability.
+    - Conducted architectural reviews, supervised refactoring of core services, and introduced event‑driven integrations.
+    - Mentored engineering staff and led training on modern development methodologies.
+    - Interviewed prospective new hires
+    - Expanded platform with multiple Vue components
+  tech: Laravel, PHP, go, microservices, PHPUnit, MySql, mongodb, Vue
+
+-
+  id: bu
+  name: BubbleUp
+  url: https://www.bubbleup.net/
+  title: Senior Web Developer
+  start:
+    datetime: 2020-02
+    text: February 2020
+  end:
+    datetime: 2021-07
+    text: July 2021
+  headline: Senior Developer for marketing firm with clients in multiple industries. Sites range from low traffic, to extremely high.
+  tech: Yii, WordPress, PHP, MySQL, AWS, Drupal, custom sites
+
+-
+  id: raven
+  name: Raven
+  url: https://www.raven.com/
+  title: Project Manager/Tech Lead
+  start:
+    datetime: 2017-10
+    text: October 2017
+  end:
+    datetime: 2020-01
+    text: January 2020
+  headline: Lead for API project. Developed Laravel-based API for document management service.
+  res:
+    - Partner with CEO to develop technical vision
+    - Articulate vision to stakeholders
+    - Supervised team of five developers
+    - Mentored and encouraged junior developers
+    - Ran weekly Scrum meetings
+  tech: Laravel/Lumen, PHP, PHPUnit, MySQL, Google Cloud Platform, Google App Engine, Google Cloud SQL, mongodb, redis, Google Datastore, Google Cloud Storage
+
+-
+  id: med
+  name: Analyte Health
+  url: https://www.analytehealth.com/
+  title: Senior Full-Stack Developer
+  start:
+    datetime: 2016-07
+    text: July 2016
+  end:
+    datetime: 2017-10
+    text: October 2017
+  headline: Full-stack development for multiple websites in the health industry, including [STDCheck](https://www.stdcheck.com/), [HealthLabs](https://www.healthlabs.com), [UTI Treatment](https://www.utitreatment.com/).
+  res:
+    - Spearheaded significant code refactor, leading to a 30% reduction in technical debt and improved maintainability.
+    - Developed secure applications, compliant with HIPAA regulations
+    - Built frontend components in AngularJS and React
+  tech: PHP, PHPUnit, MySQL, Laravel, Eloquent, Javascript, jQuery, AngularJS, React
+
+-
+  id: tri
+  name: Trilogy Education in association with the University of Texas
+  title: Bootcamp Instructor
+  start:
+    datetime: 2016-10
+    text: October 2016
+  end:
+    datetime: 2017-05
+    text: May 2017
+  headline: Taught Full-stack coding bootcamp. Six month program to introduce students to basics of full-stack MERN development and computer science principles.
+  tech: Eucation, HTML, CSS, Javascript, jQuery, APIs, AJAX, Node, Express, MySQL, sequelize, MongoDB, mongoose, PHP, Laravel, Python, React, React Native
+
+-
+  id: sm
+  name: Server Monkey
+  url: https://servermonkey.com/
+  title: Back-end web developer
+  start:
+    datetime: 2015-11
+    text: November 2015
+  end:
+    datetime: 2016-07
+    text: July 2016
+  headline: Develop Magento-based eCommerce site
+  tech: PHP, MySQL, Magento, XML, Javascript, jQuery
+
+-
+  id: hubb
+  name: Hubbard Radio
+  title: Back-end web developer
+  start:
+    datetime: 2010-07
+    text: July 2010
+  end:
+    datetime: 2015-11
+    text: November 2015
+  headline: >
+    Web developer (primarily focused on back-end) for two major news organizations: [**WTOP**](https://wtop.com/) and [**Federal News Radio**](https://federalnewsradio.com/)
+  tech: PHP, WordPress, HTML, CSS, Javascript, jQuery, MySQL, Memcache
+  res:
+    - >
+      [*WTOP StormDesk Closings*](https://wtop.com/closings-and-delays/)
+
+      - Wordpress plugin to display school, business, and government closings during inclement weather.
+      - Includes login system for schools to close schools without newsroom involvement
+      - Permission system to give users specific rights to modify individual closings, all closings, or administer the system
+    - >
+      [*NewsQ*](https://web.archive.org/web/20120113121324/https://wtop.com/?sid=2185984&nid=719&node=1)
+
+      - Designed MySQL database to store data about social ranking of stories on website.
+      - Wrote application to fetch data from various social media sites (Facebook, Twitter, Digg, etc.) in order to rank stories according to popularity.
+      - Created front-end resources to display data.
+
+-
+  id: ut
+  name: University of Texas &ndash; Mechanical Engineering Department
+  url: https://www.me.utexas.edu/
+  title: Programmer
+  start:
+    datetime: 2008-05
+    text: May 2008
+  end:
+    datetime: 2010-05
+    text: May 2010
+  tech: PHP, XHTML, HTML Forms, Wordpress, CSS, Writing
+  headline: Maintained website, wrote news stories, and oversaw a number of projects to improve the website<span class="noprint">, including:</span>
+  res:
+    - >
+        [*Senior Design Projects Database*](https://web.archive.org/web/20090326150754/https://www.me.utexas.edu/sdp/previousprojects.php): Designed MySQL database to hold information about past Senior Design Projects. Built from scratch front-end to search database and display information.
+    - >
+        &ldquo;Intranet&rdquo; site: Built Wordpress site to host department updates, and information specifically for faculty and staff. Created custom Wordpress theme to match theme of the main site.
+    - >
+        [*About Section*](https://web.archive.org/web/20100609155029/http://www.me.utexas.edu/about/): Created entire section of website for recruiting purposes. Did extensive research.
+
+-
+  id: free
+  class: noprint
+  name: Selection of assorted freelance projects
+  res:
+    - >
+      [*Dave's Pest Control*](https://web.archive.org/web/20010719153431/http://www.davespestcontrol.com/)
+    - >
+      [*Dan and Kali*](https://web.archive.org/web/20110201140251/http://danandkali.com/)
+    - >
+      [*Joe Stryker*](https://web.archive.org/web/20090428115520/http://joestryker.com/)

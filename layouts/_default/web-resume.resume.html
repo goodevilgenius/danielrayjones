@@ -39,9 +39,20 @@
     </aside>
     {{ end }}
 
+    {{ with .Resources.Get "data/jobs.yaml" }}
+    {{ with . | transform.Unmarshal -}}
     <div class="post-content">
-        {{ .Content }}
+    <section id="workhistory">
+        {{ $.Content }}
+        {{ partial "jobs.resume.html" . }}
+    </section>
     </div>
+    {{ else }}
+    {{ errorf "Unable to parse jobs" }}
+    {{ end }}
+    {{ else }}
+    {{ errorf "Unable to read jobs" }}
+    {{ end }}
 
     {{ with .Resources.Get "sections/foot-015-edu.md" }}
     <aside id="{{ .Params.id }}" class="{{ .Params.class }}">

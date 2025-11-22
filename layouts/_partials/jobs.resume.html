@@ -1,0 +1,27 @@
+<ul class="history">
+{{ range . }}
+
+    <li id="{{ .id }}" class="job {{ .class }}">
+        <p class="title">
+            {{- with .title }}<strong>{{ . }}</strong> / {{ end -}}
+            {{ with .url }}<a href="{{ . }}">{{ end }}{{ .name | markdownify }}{{ if .url }}</a>{{ end }}
+            {{- if or .start .end}}<span class="work-dates">
+            {{ with .start }}<span class="work-period"><time datetime="{{ .datetime }}">{{ .text }}</time>{{ end -}}
+            {{- if and .start .end}} - {{ end -}}
+            {{- with .end -}}
+            <span class="work-period">
+                {{- with .datetime }}<time datetime="{{ . }}">{{ end }}
+                {{- .text -}}
+                {{- if .datetime }}</time>{{ end -}}
+            </span>
+            {{- end -}}
+            </span>{{- end -}}
+        </p>
+        {{- with .headline }}<p class="headline">{{ . | markdownify }}</p>{{ end }}
+        {{ with .res }}<ul class="results">
+            {{ range . }}<li>{{ . | markdownify }}</li>{{ end }}
+        </ul>{{ end }}
+        {{- with .tech}}<p class="tech">{{ . | markdownify }}</p>{{ end -}}
+    </li>
+{{ end }}
+</ul>
