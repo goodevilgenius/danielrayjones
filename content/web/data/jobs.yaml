@@ -150,13 +150,17 @@
       [*WTOP StormDesk Closings*](https://wtop.com/closings-and-delays/)
 
       - Wordpress plugin to display school, business, and government closings during inclement weather.
+
       - Includes login system for schools to close schools without newsroom involvement
+
       - Permission system to give users specific rights to modify individual closings, all closings, or administer the system
     - >
       [*NewsQ*](https://web.archive.org/web/20120113121324/https://wtop.com/?sid=2185984&nid=719&node=1)
 
       - Designed MySQL database to store data about social ranking of stories on website.
+
       - Wrote application to fetch data from various social media sites (Facebook, Twitter, Digg, etc.) in order to rank stories according to popularity.
+
       - Created front-end resources to display data.
 
 -
@@ -174,11 +178,23 @@
   headline: Maintained website, wrote news stories, and oversaw a number of projects to improve the website<span class="noprint">, including:</span>
   res:
     - >
-        [*Senior Design Projects Database*](https://web.archive.org/web/20090326150754/https://www.me.utexas.edu/sdp/previousprojects.php): Designed MySQL database to hold information about past Senior Design Projects. Built from scratch front-end to search database and display information.
+        [*Senior Design Projects Database*](https://web.archive.org/web/20090326150754/https://www.me.utexas.edu/sdp/previousprojects.php)
+
+        - Designed MySQL database to hold information about past Senior Design Projects
+
+        Built from scratch front-end to search database and display information.
     - >
-        &ldquo;Intranet&rdquo; site: Built Wordpress site to host department updates, and information specifically for faculty and staff. Created custom Wordpress theme to match theme of the main site.
+        &ldquo;Intranet&rdquo; site
+
+        - Built Wordpress site to host department updates, and information specifically for faculty and staff.
+
+        - Created custom Wordpress theme to match theme of the main site.
     - >
-        [*About Section*](https://web.archive.org/web/20100609155029/http://www.me.utexas.edu/about/): Created entire section of website for recruiting purposes. Did extensive research.
+        [*About Section*](https://web.archive.org/web/20100609155029/http://www.me.utexas.edu/about/)
+
+        - Created entire section of website for recruiting purposes.
+
+        - Did extensive research.
 
 -
   id: free
