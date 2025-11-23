@@ -53,9 +53,11 @@
                             {{ $toc | safeHTML }}
                         {{ end }}
                     </ul>
-                    {{ with .Resources.GetMatch "dan-jones-resume.pdf" }}
-                    <p><a href="{{ .RelPermalink }}">Download a PDF</a></p>
-                    {{ end }}
+                    <p>
+                        <a href="dan-jones-resume.html">Printer-friendly format</a> | 
+                        <a href="index.md">Markdown format</a> | 
+                        {{ with .Resources.GetMatch "dan-jones-resume.pdf" }}<a href="{{ .RelPermalink }}">Download a PDF</a>{{ end }}
+                    </p>
                 </nav>
                 </aside>
                 <hr />
