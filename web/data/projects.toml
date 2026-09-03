@@ -1,10 +1,23 @@
 [[projects]]
 
+slug = "strip-beats"
+name = "strip-beats"
+url = "https://codeberg.org/danjones000/strip-beats"
+desc = "Go CLI app for transforming a folder of music videos and music files, with semi-automatic tagging and a user-friendly TUI, streamlining media organization."
+
+[[projects]]
+
+slug = "sled"
+name = "sled"
+url = "https://codeberg.org/danjones000/sled"
+desc = "Incredibly simple service locator for go, using context and generics"
+
+[[projects]]
+
 slug = "ezcache"
 name = "ezcache"
 url = "https://pkg.go.dev/codeberg.org/danjones000/ezcache"
 desc = "Dead simple in-memory caching library for Go, designed to improve application performance by reducing database load and API calls."
-
 
 [[projects]]
 
@@ -15,8 +28,8 @@ desc = "Go library for random filename generation, useful for creating unique id
 
 [[projects]]
 
-slug = "gin-error-middleware"
-name = "gin error middleware"
+slug = "gin-error-handler"
+name = "gin error handler"
 url = "https://pkg.go.dev/codeberg.org/danjones000/gin-error-handler"
 desc = "A middleware for Go Gin framework and wrapper functions to make handling errors easier and more idiomatic, improving API robustness."
 
@@ -25,7 +38,7 @@ desc = "A middleware for Go Gin framework and wrapper functions to make handling
 slug = "responsable"
 name = "Responsable Errors"
 url = "https://pkg.go.dev/codeberg.org/danjones000/responsable-errors"
-desc = "A small Go library that provides errors that can be more useful in the context of a web app. The heart of gin error middleware, it enables structured and user-friendly error responses."
+desc = "A small Go library that provides errors that can be more useful in the context of a web app. The heart of gin error handler, it enables structured and user-friendly error responses."
 
 [[projects]]
 
@@ -43,13 +56,6 @@ desc = "A work-in-progress complete rewrite of droplogger in Go, aiming for impr
 
 [[projects]]
 
-slug = "strip-beats"
-name = "strip-beats"
-url = "https://codeberg.org/danjones000/strip-beats"
-desc = "Go CLI app for transforming a folder of music videos and music files, with semi-automatic tagging and a user-friendly TUI, streamlining media organization. *This is a work in progress. Not yet fully functional.*"
-
-[[projects]]
-
 slug = "object-spy"
 name = "Object Spy"
 url = "https://packagist.org/packages/danjones000/object-spy"
@@ -61,3 +67,10 @@ slug = "go-status"
 name = "http go status"
 url = "https://codeberg.org/danjones000/http-go-status"
 desc = "Super simple web server that just returns the HTTP status you ask for, useful for testing and debugging HTTP client behavior."
+
+[[projects]]
+
+slug = "ffmpeg-mappable-media"
+name = "Mappable Media for PHP-FFMPEG"
+url = "https://codeberg.org/danjones000/ffmpeg-mappable-media"
+desc = "An extension for PHP-FFMPeg to more easily handle ffmpeg streams"

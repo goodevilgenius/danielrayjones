@@ -141,15 +141,17 @@ Selection of assorted freelance projects
 
 ## Selected Open Source Projects
 
+- [strip-beats](https://codeberg.org/danjones000/strip-beats): Go CLI app for transforming a folder of music videos and music files, with semi-automatic tagging and a user-friendly TUI, streamlining media organization.
+- [sled](https://codeberg.org/danjones000/sled): Incredibly simple service locator for go, using context and generics
 - [ezcache](https://pkg.go.dev/codeberg.org/danjones000/ezcache): Dead simple in-memory caching library for Go, designed to improve application performance by reducing database load and API calls.
 - [nomino](https://pkg.go.dev/codeberg.org/danjones000/nomino): Go library for random filename generation, useful for creating unique identifiers and preventing naming conflicts.
-- [gin error middleware](https://pkg.go.dev/codeberg.org/danjones000/gin-error-handler): A middleware for Go Gin framework and wrapper functions to make handling errors easier and more idiomatic, improving API robustness.
-- [Responsable Errors](https://pkg.go.dev/codeberg.org/danjones000/responsable-errors): A small Go library that provides errors that can be more useful in the context of a web app. The heart of gin error middleware, it enables structured and user-friendly error responses.
+- [gin error handler](https://pkg.go.dev/codeberg.org/danjones000/gin-error-handler): A middleware for Go Gin framework and wrapper functions to make handling errors easier and more idiomatic, improving API robustness.
+- [Responsable Errors](https://pkg.go.dev/codeberg.org/danjones000/responsable-errors): A small Go library that provides errors that can be more useful in the context of a web app. The heart of gin error handler, it enables structured and user-friendly error responses.
 - [droplogger](https://gitlab.com/danjones000/droplogger): Python logging application especially suited for life-logging with IFTTT and Dropbox, providing automated personal data collection.
 - [my-log](https://codeberg.org/danjones000/my-log/): A work-in-progress complete rewrite of droplogger in Go, aiming for improved performance and maintainability.
-- [strip-beats](https://codeberg.org/danjones000/strip-beats): Go CLI app for transforming a folder of music videos and music files, with semi-automatic tagging and a user-friendly TUI, streamlining media organization. *This is a work in progress. Not yet fully functional.*
 - [Object Spy](https://packagist.org/packages/danjones000/object-spy): PHP debugging library that makes it easy to inspect private properties and methods without using reflection, simplifying complex debugging tasks.
 - [http go status](https://codeberg.org/danjones000/http-go-status): Super simple web server that just returns the HTTP status you ask for, useful for testing and debugging HTTP client behavior.
+- [Mappable Media for PHP-FFMPEG](https://codeberg.org/danjones000/ffmpeg-mappable-media): An extension for PHP-FFMPeg to more easily handle ffmpeg streams
 
 ## Education
 
