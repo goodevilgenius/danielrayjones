@@ -5,9 +5,25 @@
     font-size: 10pt;
 }
 
+@print {
+    size: letter;
+    margin: 0.15in;
+
+    @top-right, @top-left, @bottom-left, @bottom-right {
+        content: "";
+    }
+}
+
 .noprint {
     display: none;
 }
+
+.emoji {
+    font-family: "Noto Color Emoji", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 
 body {
     max-width: 1024px;
@@ -98,6 +114,7 @@ header {
 #workhistory {
     ul.history {
         li.job {
+            page-break-inside: avoid;
             p.title {
                 .work-dates {
                     float: right;

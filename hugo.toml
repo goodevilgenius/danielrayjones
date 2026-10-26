@@ -12,7 +12,7 @@ isHTML = true
 baseName = "dan-jones-resume"
 
 [params]
-homeSubtitle = "Web developer, actor, jack of some trades"
+homeSubtitle = "Software engineer, actor, jack of some trades"
 EnableThemeToggle = true
 gitUrl = "https://codeberg.org/danjones000/danielrayjones/commit/"
 keywords = "resume, biography"
