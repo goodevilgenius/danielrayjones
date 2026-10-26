@@ -1,20 +1,18 @@
 +++
 title = "Introduction"
-description = "Welcome to my website. My name is Dan Jones. I am a web developer and an actor, and I'd like to tell you a bit about myself."
+description = "Welcome to my website. My name is Dan Jones. I am a software engineer and an actor, and I'd like to tell you a bit about myself."
 +++
 
-Welcome to my website. My name is Dan Jones. I am a web developer and an actor, and I'd like to tell you a bit about myself.
+Welcome to my website. My name is Dan Jones. I am a software engineer and an actor, and I'd like to tell you a bit about myself.
 
 <section id="webdeveloper">
 
-## Dan Jones, the Web Developer
+## Dan Jones, the Software Engineer
 
 {{< figure src="https://res.cloudinary.com/danjones000/image/upload/v1518462377/danielrayjones/C64c_system.jpg" alt="Commodore 64" title="Commodore 64" class="right-floated aside" attr="&copy; Bill Bertram" attrlink="http://commons.wikimedia.org/wiki/File:C64c_system.jpg" >}}
 
-I was first exposed to computers as a child. My family had a Commodore 64, on which, as a ten-year old child, I 
-would do my homework, play games, and make simple programs. I learned how to program in
-[<abbr title="Beginner's All-purpose Symbolic Instruction Code">BASIC</abbr>](https://en.wikipedia.org/wiki/BASIC).
-It was then that I began to understand how computers could improve our day-to-day lives.
+I was first exposed to computers as a child. My family had a Commodore 64, on which, as a ten-year old child, I would do my homework, play games, and make simple programs. I learned how to program in
+[<abbr title="Beginner's All-purpose Symbolic Instruction Code">BASIC</abbr>](https://en.wikipedia.org/wiki/BASIC). It was then that I began to understand how computers could improve our day-to-day lives.
 
 When we upgraded to a newer computer, we finally got the Internet (via [Prodigy](https://en.wikipedia.org/wiki/Prodigy_%28online_service%29)) in our home. When I was 14, I got my first email address, and at 15, created my first website on [GeoCities](https://en.wikipedia.org/wiki/GeoCities) (my site was in the *Silicon Valley* "neighborhood"). My site was essentially a blog before blogs existed.
 
@@ -24,12 +22,18 @@ I learned <abbr title=" Hypertext Markup Language">HTML</abbr> to layout the sit
 
 When I entered college, I gained additional skills necessary to run enterprise websites. I learned PHP, for truly dynamic website. I learned SQL, to interact with databases. I also gained some experience with server administration by setting up and running my website on my own <abbr title="Linux, Apache, MySQL, PHP">LAMP</abbr> server. I also gained experience with several platforms and frameworks.
 
-Since that time, I've worked in numerous industries, on websites of all shapes and sizes. I continue to learn more and improve my skills.
+Since that time, I've worked in numerous industries, on applications of all shapes and sizes. I continue to learn more and improve my skills.
 
 </section>
 
-<section id="actor" class="hidden">
+<section id="actor">
 
 ## Dan Jones, the Actor
+
+I started acting in high school and quickly fell in love with it. The ability to inhabit another life, while also touching another person's heart and mind, resonated deeply with me.
+
+Throughout high school, I was active in theater. After high school, I pursued a degree in Theater from The University of Texas, completing that degree in 2008. During my time in college, I expanded by acting pursuits, performing not only in theater, but short films, and even starring in and co-producing a YouTube series.
+
+After college, I took a hiatus from acting to focus on my family. But recently, in the fall of 2026, I returned to the stage and found that my passion for the craft had not diminished sitting there intervening years. I look forward to further pursuits in the near future.
 
 </section>

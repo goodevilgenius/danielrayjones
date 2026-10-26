@@ -11,7 +11,7 @@ description: Dan Jones, actor
 +1 (704) 326–1626   
 [dan&#x40;danielrayjones&#x2e;com](mailto:dan&#x40;danielrayjones&#x2e;com)
 
-Height: 6ft. &bull; Weight: 235 lbs.   
+Height: 6ft. &bull; Weight: 275 lbs.   
 Hair: Brown &bull; Eyes: Blue
 
 </aside>
@@ -40,6 +40,7 @@ Hair: Brown &bull; Eyes: Blue
 
 |   |   |   |
 |---|---|---|
+| Much Ado About Nothing | Don John, Sexton | The Live Oak Playhouse (2026) |
 | Corona | Colonel – Lead | University of Texas (2007) |
 | Marat/Sade | Male Nurse – Supporting | University of Texas (2007) |
 | Holes | Igor Barkov, Policeman – Supporting | University of Texas (2006) |

@@ -74,9 +74,15 @@ weight = 1
 
 [[menu.main]]
 identifier = "web"
-name = "Résumé"
+name = "Software"
 url = "/web/"
 weight = 10
+
+[[menu.main]]
+identifier = "acting"
+name = "Acting"
+url = "/theater/"
+weight = 15
 
 [[menu.main]]
 identifier = "contact"
